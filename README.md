@@ -1,5 +1,26 @@
-# 3340FinalProject
-Written by:
-- Chris Freund B00796285
-- Jacob Miller B00795932
-- Seoyeon (Cali) Park B00768397
+# Final Project Math/Stat3340 
+Written by: 
+- Chris Freund
+- Jacob Miller
+- Seoyeon Cali Park B00768397
+
+
+## Abstract
+## Introduction
+## Data Description
+## Methods
+## Results
+## Conclusion
+## Appendix
+
+
+
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+

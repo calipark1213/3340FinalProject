@@ -1,9 +1,8 @@
 # Final Project Math/Stat3340 
-Written by: 
-- Chris Freund
-- Jacob Miller
-- Seoyeon Cali Park B00768397
-
+**Written by:** 
+- Chris Freund _ _
+- Jacob Miller _ _
+- Seoyeon Cali Park _B00768397_
 
 ## Abstract
 ## Introduction

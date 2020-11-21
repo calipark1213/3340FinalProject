@@ -16,7 +16,7 @@ This document can be found on https://www2.census.gov/geo/pdfs/maps-data/maps/re
 3. We would like to answer the following research question: 
 
 ## Introduction
-
+This CDC data set 
 ## Data Description
 ## Methods
 ## Results

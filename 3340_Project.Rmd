@@ -1,0 +1,47 @@
+---
+title: "3340 Project"
+author: "Jacob, Chris, Cali"
+date: "21/11/2020"
+output: html_document
+---
+
+Setup (CHRIS, CALI PLEASE REPLACE JACOB)
+```{r setup, include=FALSE}
+setwd("C:\\Users\\jacob\\Desktop")
+library(dplyr)
+library(tidyverse)
+read.csv("C:\\Users\\jacob\\Desktop\\original_data.csv") -> original_data
+```
+
+
+Removing useless data entries ("Data not avaikable...")
+```{r}
+filter(original_data, Data_Value_Footnote != "Data not available because sample size is insufficient.") -> df_1
+
+filter(df_1, Data_Value_Footnote != "Data not available because sample size is insufficient.  If data only missing for the confidence interval, the confidence interval was not calculated.") -> df_2
+```
+
+
+Removing irrelevant data columns
+```{r}
+subset(df_2, select = -c(
+  YearEnd, LocationAbbr, Datasource, Class, Data_Value_Unit, Data_Value_Type, Data_Value_Alt, Data_Value_Footnote,   DataValueTypeID, StratificationCategoryId1, StratificationID1, ClassID, TopicID, QuestionID)) -> df_3
+```
+
+
+Removing US Terretories (not needed for our analysis)
+```{r}
+filter(df_3, LocationID < 59) -> df_4
+```
+
+
+INSERTING NEW MADE-UP ROW
+```{r}
+add_case(df_4, 
+         YearStart = 2012, LocationDesc = "Florida", Topic = "Obesity / Weight Status", Question = "Percent of adults aged 18 years and older who have obesity", Data_Value = 30.9999, Low_Confidence_Limit = 32.0001, High_Confidence_Limit = 36.9999, Sample_Size = 3002, Gender = "Male", GeoLocation = "(28.932040377000476, -81.92896053899966)", LocationID = 12) -> df
+```
+
+```{r}
+write.csv(df, file = "edited_data.csv")
+help(write.csv)
+```

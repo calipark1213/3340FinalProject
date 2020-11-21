@@ -13,7 +13,7 @@
 2. We have also found a separate document which specifies where each of the 50 states (_excluding District of Columbia, i.e. Washington D.C. but added as another division_) fall under in one of the 4 regions. 
 This document can be found on https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf
 
-3. We would like to answer the following research question: 
+3. We would like to answer the following research question: Is there a relationship between the obesity rates, geographical region, and age groups across the 4 regions in the United States of America?
 
 ## Introduction
 This CDC data set 

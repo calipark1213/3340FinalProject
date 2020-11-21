@@ -4,14 +4,13 @@ author: "Jacob, Chris, Cali"
 due date: "December 11th 2020"
 output: html_document
 ---
-/*===================================================================================================```{r setup, include=FALSE}
+```{r setup, include=FALSE}
 setwd("C:\\Users\\jacob\\Desktop") #Please set working directory to where you have the CDC file
 library(dplyr)
 library(tidyverse)
 read.csv("C:\\Users\\jacob\\Desktop\\original_data.csv") -> original_data #Please set file location to where you have the CDC file
 ```
 
-fsdfsdfsfsdsdfs HI CALI
 Removing useless data entries ("Data not available...")
 ```{r}
 filter(original_data, Data_Value_Footnote != "Data not available because sample size is insufficient.") -> df_1

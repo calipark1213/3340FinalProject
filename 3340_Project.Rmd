@@ -32,11 +32,11 @@ filter(df_3, LocationID < 59) -> df_4
 ```
 
 
-INSERTING NEW MADE-UP ROW
-```{r}
-add_case(df_4, 
-   -> df
-```
+#INSERTING NEW MADE-UP ROW
+#```{r}
+#add_case(df_4, 
+#   -> df
+#```
 
 ```{r}
 write.csv(df, file = "edited_data.csv")

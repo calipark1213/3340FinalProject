@@ -32,14 +32,17 @@ filter(df_3, LocationID < 59) -> df_4
 ```
 
 
-#INSERTING NEW MADE-UP ROW
-#```{r}
-#add_case(df_4, 
-#   -> df
-#```
+INSERTING NEW MADE-UP ROW
+```{r}
+add_case(df_4, 
+YearStart = 2012, LocationDesc = "Alabama", Topic = "Obesity / Weight Status", Question = "Percent of adults aged 18 years and older who have obesity", Data_Value = 29.999, Data_Value_Footnote_Symbol = "", Low_Confidence_Limit = 23.999, High_Confidence_Limit = 33.499, Sample_Size = 1255, Total = "", Age.years. = "", Education = "", Gender = "", Income = "", Race.Ethnicity = "Asian", GeoLocation = "(32.84057112200048, -86.63186076199969)", LocationID = 1, StratificationCategory1 = "Race/Ethnicity", Stratification1 = "Asian"         
+         ) -> df_5
+filter(df_5, Income != "Data not reported") -> df
+
+df["311", "Sample_Size"] <- 1974
+
+```
 
 ```{r}
-write.csv(df, file = "edited_data.csv")
-help(write.csv)
+write.csv(df, file = "edited_data2.csv")
 ```
-`

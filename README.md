@@ -12,20 +12,21 @@
     - We have added a new data point to Florida - this is to ensure that our data set is unique compared to others with the same data set. 
     
 2. We have also found a separate document which specifies where each of the 50 states (_Note that region 5 includes the Disctict of Colombia but is not included in the CDC data set._) fall under in one of the 4 regions. 
-This document can be found on https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf
+This document can be found on _https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf_
 
 3. We would like to answer the following research question: What is the relationship between the obesity rates, geographical region, and income across the 4 regions in the United States?
 
 ## Introduction
 
-This data analysis project uses techniques of regression analysis to determine what kind of relationship exists between obesity rates, geographical region, and income across the 4 regions in the US. We are dividing the regions into the following: Northeast, Midwest, South, and West. 
+This data analysis project uses techniques of regression analysis to determine what kind of relationship exists between obesity rates, geographical region, and income across the 4 regions in the US. We are dividing the regions into the following: Northeast, Midwest, South, and West. The states under those regions can be found on the _census.gov_ document in the abstract. We will be performing simple/multiple linear regression, 
 
 ## Data Description
 ## Methods
 ## Results
 ## Conclusion
 ## Appendix
-## References
+## Rerefences
+- U.S. Geography Division (2013). _Census Regions and Divisions of the United States_. U.S. Department of Commerce, Economics and Statistics Administration, U.S. Census Bureau. https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf
 
 1.Perform least-squares estimation, hypothesis testing and interval estimation for simple linear regression models by hand and using R.
 2.Perform least-squares estimation, hypothesis testing and interval estimation for multiplelinear regression models using R.

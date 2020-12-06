@@ -5,6 +5,7 @@
 - Seoyeon Cali Park _B00768397_
 
 ## Abstract
+
 1. Our objective is to perform a full regression analysis of using a subset of the CDC data set found on https://lionbridge.ai/datasets/10-open-datasets-for-linear-regression/. 
     - Some of the data points in the CDC data set have been removed due to insufficient sample size. 
     - Data columns have been removed (indicated in the R code) to better fit our research question. 
@@ -16,6 +17,9 @@ This document can be found on https://www2.census.gov/geo/pdfs/maps-data/maps/re
 3. We would like to answer the following research question: What is the relationship between the obesity rates, geographical region, and income across the 4 regions in the United States?
 
 ## Introduction
+
+This data analysis project uses techniques of regression analysis to determine what kind of relationship exists between obesity rates, geographical region, and income across the 4 regions in the US. We are dividing the regions into the following: Northeast, Midwest, South, and West. 
+
 ## Data Description
 ## Methods
 ## Results
@@ -23,7 +27,16 @@ This document can be found on https://www2.census.gov/geo/pdfs/maps-data/maps/re
 ## Appendix
 ## References
 
-
+1.Perform least-squares estimation, hypothesis testing and interval estimation for simple linear regression models by hand and using R.
+2.Perform least-squares estimation, hypothesis testing and interval estimation for multiplelinear regression models using R.
+3.Perform estimation by maximum likelihood and predict new observations using R.
+4.Check model adequacy via residual analysis, detection and treatment of outliers and tests for lack of fit.
+5.Employ transformations and weighting to correct model inadequacies. 
+6.Explore diagnostics for leverage and influence.
+7.Understand and be able to address multicollinearity.
+8.Select variables and build models using computational techniques.
+9.ANOVA.
+10.Modern regression approaches. 
 
 
 

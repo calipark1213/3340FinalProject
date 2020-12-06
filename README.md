@@ -18,7 +18,7 @@ This document can be found on _https://www2.census.gov/geo/pdfs/maps-data/maps/r
 
 ## Introduction
 
-This data analysis project uses techniques of regression analysis to determine what kind of relationship exists between obesity rates, geographical region, and income across the 4 regions in the US. We are dividing the regions into the following: Northeast, Midwest, South, and West. The states under those regions can be found on the _census.gov_ document in the abstract. Furthermore, each region will be divided into 5 groups depending on income: individuals who make less than $15,000, $25,000 - $34,999, $35,000 - $49,999, $50,000 - $74,999, $75,000 or greater per year. We will be using the techniques we learned from 3340, which includes performing simple/multiple linear regression, calculating maximum likelihood, residual analysis, etc. More will be explained in the Methods section.
+This data analysis project uses techniques of regression analysis to determine what kind of relationship exists between obesity rates, geographical region, and income across the 4 regions in the US. We are dividing the regions into the following: Northeast, Midwest, South, and West. The states under those regions can be found on the _census.gov_ document in the abstract. Furthermore, each region will be divided into 5 groups depending on income: individuals who make less than $15,000, $25,000 - $34,999, $35,000 - $49,999, $50,000 - $74,999, and $75,000 or greater per year. We will be using the techniques we learned from 3340, which includes performing simple/multiple linear regression, calculating maximum likelihood, residual analysis, etc. More will be explained in the Methods section.
 
 
 ## Data Description

@@ -35,7 +35,7 @@ filter(df_3, LocationID < 59) -> df_4
 INSERTING NEW MADE-UP ROW
 ```{r}
 add_case(df_4, 
-  YearStart = 2012, LocationDesc = "Florida", Topic = "Obesity / Weight Status", Question = "Percent of adults aged 18 years and older who have obesity", Data_Value = 30.9999, Low_Confidence_Limit = 32.0001, High_Confidence_Limit = 36.9999, Sample_Size = 3002, Gender = "Male", GeoLocation = "(28.932040377000476, -81.92896053899966)", LocationID = 12) -> df
+   -> df
 ```
 
 ```{r}

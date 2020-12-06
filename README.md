@@ -13,10 +13,9 @@
 2. We have also found a separate document which specifies where each of the 50 states (_Note that region 5 includes the Disctict of Colombia but is not included in the CDC data set._) fall under in one of the 4 regions. 
 This document can be found on https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf
 
-3. We would like to answer the following research question: Is there a relationship between the obesity rates, geographical region, and age groups across the 4 regions in the United States?
+3. We would like to answer the following research question: What is the relationship between the obesity rates, geographical region, and income across the 4 regions in the United States?
 
 ## Introduction
-This CDC data set 
 ## Data Description
 ## Methods
 ## Results

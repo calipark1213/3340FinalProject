@@ -44,44 +44,10 @@ df_6["311", "Sample_Size"] <- 1974 #This adds our new asian demographic into inc
 ```
 
 
-Marking each state by its region 
-```{r}
-newCol <- c(1:44702) #Creating a new column that will turn into region ID
-df_7 <- cbind(df_6, RegionID = newCol) #The numbering 1-44702 also helps check for missed rows
-
-for (i in seq_along(df_7$LocationID)) {    #REGION 4, SOUTH
-  if(df_7$LocationID[i] == 1 | df_7$LocationID[i] == 48 | df_7$LocationID[i] == 40 | df_7$LocationID[i] == 5 | df_7$LocationID[i] == 22 | df_7$LocationID[i] == 28 | df_7$LocationID[i] == 47 | df_7$LocationID[i] == 21 | df_7$LocationID[i] == 13 | df_7$LocationID[i] == 12 | df_7$LocationID[i] == 37 | df_7$LocationID[i] == 45 | df_7$LocationID[i] == 51 | df_7$LocationID[i] == 54 | df_7$LocationID[i] == 24 | df_7$LocationID[i] == 10 | df_7$LocationID[i] == 11) {
-    df_7$RegionID[i] <- 4
-   }
-}
-
-for (i in seq_along(df_7$LocationID)) {    #REGION 3, NORTHEAST
-  if(df_7$LocationID[i] == 23 | df_7$LocationID[i] == 33 | df_7$LocationID[i] == 50 | df_7$LocationID[i] == 25 | df_7$LocationID[i] == 9 | df_7$LocationID[i] == 44 | df_7$LocationID[i] == 36 | df_7$LocationID[i] == 34 | df_7$LocationID[i] == 42) {
-    df_7$RegionID[i] <- 3
-   }
-}
-
-for (i in seq_along(df_7$LocationID)) {    #REGION 2, MIDWEST
-  if(df_7$LocationID[i] == 38 | df_7$LocationID[i] == 46 | df_7$LocationID[i] == 31 | df_7$LocationID[i] == 20 | df_7$LocationID[i] == 27 | df_7$LocationID[i] == 19 | df_7$LocationID[i] == 29 | df_7$LocationID[i] == 55 | df_7$LocationID[i] == 17 | df_7$LocationID[i] == 26 | df_7$LocationID[i] == 18 | df_7$LocationID[i] == 39) {
-    df_7$RegionID[i] <- 2
-   }
-}
-
-for (i in seq_along(df_7$LocationID)) {    #REGION 1, WEST
-  if(df_7$LocationID[i] == 53 | df_7$LocationID[i] == 41 | df_7$LocationID[i] == 6 | df_7$LocationID[i] == 30 | df_7$LocationID[i] == 16 | df_7$LocationID[i] == 56 | df_7$LocationID[i] == 32 | df_7$LocationID[i] == 49 | df_7$LocationID[i] == 8 | df_7$LocationID[i] == 4 | df_7$LocationID[i] == 35) {
-    df_7$RegionID[i] <- 1
-   }
-}
-
-filter(df_7, LocationDesc != "Alaska") -> df_8
-filter(df_8, LocationDesc != "Hawaii") -> df_9
-```
-
-
 #Giving each income range a value instead of using "$25,000 - $34,999" every time
 ```{r}
-newCol <- c(1:42924) 
-df_10 <- cbind(df_9, IncomeID = newCol) 
+newCol <- c(1:44702) 
+df_10 <- cbind(df_6, IncomeID = newCol) 
 
 for (i in seq_along(df_10$Income)) {
   if(df_10$Income[i] == "Less than $15,000") {
@@ -104,8 +70,9 @@ df_total <- df_10
 ```
 
 ```{r}
-filter(df_total, Question == "Percent of adults aged 18 years and older who have obesity") -> df_question
-filter(df_question, IncomeID != "") -> df_prime
+filter(df_total, Question == "Percent of adults aged 18 years and older who have obesity" | Question == "Percent of adults who report consuming fruit less than one time daily" | Question == "Percent of adults who report consuming vegetables less than one time daily" ) -> df_q
+
+filter(df_q, IncomeID != "") -> df_prime
 
 subset(df_prime, select = -c(
   Data_Value_Footnote_Symbol, Total, Age.years., Education, Gender, Race.Ethnicity, LocationID, Stratification1, StratificationCategory1

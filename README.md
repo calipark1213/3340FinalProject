@@ -18,6 +18,8 @@
 This data analysis project uses techniques of regression analysis to determine what type of relationship exists between obesity rates, daily fruit and vegetable consumption, and income. We will only be looking at the proportion of people who eats fruits and vegetables less than once daily. Income is divided into 6 groups: individuals who make less than $15,000, $15,000 -  $24,999, $25,000 - $34,999, $35,000 - $49,999, $50,000 - $74,999, and $75,000 or greater per year. We will be using the techniques we learned from Math/Stat3340, which includes performing simple/multiple linear regression, calculating maximum likelihood, residual analysis, analysis of variance, etc. These techniques will be discussed further in the methods section. 
 
 ## Data Description
+Data ranges from 2011 to 2016
+Average all data values that fall under % obese and fruits and veggies in 2011, 2012, ... , 2016
 ## Methods
 ## Results
 ## Conclusion

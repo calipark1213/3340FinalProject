@@ -1,8 +1,0 @@
-newCol <- c(1:44702)
-df_7 <- cbind(df_6, RegionID = newCol)
-
-for (i in 1:44702) {
-  if (df_7$LocationID == 1) {
-    df_7$RegionID = 4
-  }
-}

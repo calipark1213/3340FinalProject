@@ -5,46 +5,34 @@ due date: "December 11th 2020"
 output: html_document
 ---
 ```{r setup, include=FALSE}
-setwd("C:\\Users\\jacob\\Desktop") #Please set working directory to where you have the CDC file
+setwd("C:\\Users\\jacob\\Desktop") 
 library(dplyr)
 library(tidyverse)
-read.csv("C:\\Users\\jacob\\Desktop\\original_data.csv") -> original_data #Please set file location to where you have the CDC file
+read.csv("C:\\Users\\jacob\\Desktop\\original_data.csv") -> original_data 
 ```
+Please set working directory to where you have your dataset and upload the csv file with the correct path. 
 
-Removing useless data entries ("Data not available...")
+
 ```{r}
 filter(original_data, Data_Value_Footnote != "Data not available because sample size is insufficient.") -> df_1
-
 filter(df_1, Data_Value_Footnote != "Data not available because sample size is insufficient.  If data only missing for the confidence interval, the confidence interval was not calculated.") -> df_2
-```
-
-
-Removing irrelevant data columns
-```{r}
 subset(df_2, select = -c(
   YearEnd, LocationAbbr, Datasource, Class, Data_Value_Unit, Data_Value_Type, Data_Value_Alt, Data_Value_Footnote,   DataValueTypeID, StratificationCategoryId1, StratificationID1, ClassID, TopicID, QuestionID)) -> df_3
-```
-
-
-Removing US Territories (not needed for our analysis)
-```{r}
 filter(df_3, LocationID < 59) -> df_4
 ```
+In this first chunk of code, we are removing irrelevant data columns and useless data entries. We are also removing rows with US territories. 
 
 
-INSERTING NEW MADE-UP ROW
 ```{r}
 add_case(df_4, 
-YearStart = 2012, LocationDesc = "Alabama", Topic = "Obesity / Weight Status", Question = "Percent of adults aged 18 years and older who have obesity", Data_Value = 29.999, Data_Value_Footnote_Symbol = "", Low_Confidence_Limit = 23.999, High_Confidence_Limit = 33.499, Sample_Size = 1255, Total = "", Age.years. = "", Education = "", Gender = "", Income = "", Race.Ethnicity = "Asian", GeoLocation = "(32.84057112200048, -86.63186076199969)", LocationID = 1, StratificationCategory1 = "Race/Ethnicity", Stratification1 = "Asian"         
-         ) -> df_5
+YearStart = 2012, LocationDesc = "Alabama", Topic = "Obesity / Weight Status", Question = "Percent of adults aged 18 years and older who have obesity", Data_Value = 29.999, Data_Value_Footnote_Symbol = "", Low_Confidence_Limit = 23.999, High_Confidence_Limit = 33.499, Sample_Size = 1255, Total = "", Age.years. = "", Education = "", Gender = "", Income = "", Race.Ethnicity = "Asian", GeoLocation = "(32.84057112200048, -86.63186076199969)", LocationID = 1, StratificationCategory1 = "Race/Ethnicity", Stratification1 = "Asian") -> df_5
 filter(df_5, Income != "Data not reported") -> df_6
 
-df_6["311", "Sample_Size"] <- 1974 #This adds our new asian demographic into income (where 1255 was preiovusly unavailable)
-
+df_6["311", "Sample_Size"] <- 1974 
 ```
+This next chunk adds our new data point. This is to ensure that every dataset is unique from other groups in the class. Here we have added a new Asian demographic into income(where 1255 was previously unavailable. 
 
 
-#Giving each income range a value instead of using "$25,000 - $34,999" every time
 ```{r}
 newCol <- c(1:44702) 
 df_10 <- cbind(df_6, IncomeID = newCol) 
@@ -68,16 +56,19 @@ for (i in seq_along(df_10$Income)) {
 }
 df_total <- df_10
 ```
+As explained in the introduction, we have 6 levels of income in our data. This code assigns each income range a value instead of using the range (for example, "$25,000 - $34,999") every time. 
+
 
 ```{r}
 filter(df_total, Question == "Percent of adults aged 18 years and older who have obesity" | Question == "Percent of adults who report consuming fruit less than one time daily" | Question == "Percent of adults who report consuming vegetables less than one time daily" ) -> df_q
 
-filter(df_q, IncomeID != "") -> df_prime
+filter(df_q, IncomeID != "") -> df_prime #Erases blank IncomeID values
 
 subset(df_prime, select = -c(
   Data_Value_Footnote_Symbol, Total, Age.years., Education, Gender, Race.Ethnicity, LocationID, Stratification1, StratificationCategory1
 )) -> df_prime
 ```
+
 
 ```{r}
 write.csv(df_prime, file = "edited_data_prime.csv")

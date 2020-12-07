@@ -10,11 +10,8 @@
     - Some of the data points in the CDC data set have been removed due to insufficient sample size. 
     - Data columns have been removed (indicated in the R code) to better fit our research question. 
     - We have added a new data point to Alabama - this is to ensure that our data set is unique compared to others with the same data set, more reasoning behind this data point is discussed in the data description section. 
-    
-2. We have also found a separate document which specifies where each of the 50 states (_Note that region 5 includes the Disctict of Colombia but is not included in the CDC data set._) fall under in one of the 4 regions. 
-This document can be found on _https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf_
 
-3. We would like to answer the following research question: What is the relationship between the obesity rates, geographical region, and income across the 4 regions in the United States?
+2. We would like to answer the following research question: What is the relationship between the people who eat fruits or vegetables less than once a day and obesity and income?
 
 ## Introduction
 
@@ -26,7 +23,7 @@ This data analysis project uses techniques of regression analysis to determine w
 ## Conclusion
 ## Appendix
 ## Rerefences
-- U.S. Geography Division (2013). _Census Regions and Divisions of the United States_. U.S. Department of Commerce, Economics and Statistics Administration, U.S. Census Bureau. https://www2.census.gov/geo/pdfs/maps-data/maps/reference/us_regdiv.pdf
+
 
 1.Perform least-squares estimation, hypothesis testing and interval estimation for simple linear regression models by hand and using R.
 2.Perform least-squares estimation, hypothesis testing and interval estimation for multiplelinear regression models using R.

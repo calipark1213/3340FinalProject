@@ -1,5 +1,3 @@
-#dcffe4, $bg-green-light
-
 # Final Project Math/Stat3340 
 **Written by:** 
 - Chris Freund _B00796285_

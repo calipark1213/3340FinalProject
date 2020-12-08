@@ -22,7 +22,8 @@ This data analysis project uses techniques of regression analysis to determine w
 | $25,000 - $34,999 | 3 |
 | $35,000 - $49,999 | 4 |
 | $50,000 - $74,999 | 5 |
-| $75,000 or greater per year  | 6 | <br/>
+| $75,000 or greater per year  | 6 | 
+
 We will be using the techniques we learned from Math/Stat3340, which includes performing simple/multiple linear regression, calculating maximum likelihood, residual analysis, analysis of variance, etc. These techniques will be discussed further in the methods section. 
 
 ## Data Description
@@ -35,13 +36,16 @@ Moved obesity, fruit, vegetable percentage to one column for every income level.
 We will be defining the consumption of fruit and vegetables as our two main predictor variables, x<sub>1</sub> and x<sub>2</sub> respectively, and fit a linear regression model to determine if it has an affect on obesity rates. Before we fit the model, we begin by normalizing the predictor variables by taking the mean and subtracting it from each point to allow easier interpretation and to reduce variability. 
 
 ## Results
-We begin with scatterplots to get a general visualization of the data we are working with. <br/>
+We begin with scatterplots to get a general visualization of the data we are working with. 
+
 #### Figure 1.1: Less than one fruit per day VS Rate of obesity (Normalized) <br/>
 ![Less than one fruit VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101521587-6dfcf180-395c-11eb-9a8d-54b98ff294a6.png) <br/>
-**_y_ = 0.4582x<sub>1</sub> - 1.109E-15**  <br/>
+**_y_ = 0.4582x<sub>1</sub> - 1.109E-15**  
+
 #### Figure 1.2: Less than one vegetable per day VS Rate of obesity (Normalized) <br/>
 ![Less than one veggie VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101521588-6e958800-395c-11eb-92a4-12560392ba44.png) <br/>
-**_y_ = 0.3904x<sub>2</sub> - 4.421E-17**  <br/>
+**_y_ = 0.3904x<sub>2</sub> - 4.421E-17**  
+
 From the scatterplots, we see that there appears to be a relationship between eating fruits or vegetables and obesity. However, we will perform a more in depth analysis to better understand the relationships. 
 
 ## Conclusion

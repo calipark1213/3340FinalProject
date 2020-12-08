@@ -10,10 +10,12 @@
     ii. Data columns have been removed to better fit our research question. <br/>
     iii.  We have added a new data point to Alabama - this is to ensure that our data set is unique compared to others with the same data set. <br/>
     _Note: ii and iii will be discussed further in the Data Description section_ <br/>
-2.	We would like to answer the following research question: Does income have an effect on the obesity rates of people who eat fruits and vegetables daily?
+2.	We would like to answer the following questions: Does the daily consumption of fruits and vegetables have an effect on the obesity rates? Is there a relationship between income and obesity?
 
 ## Introduction
 This data analysis project uses techniques of regression analysis to determine what type of relationship exists between obesity rates, daily fruit and vegetable consumption, and income. We will only be looking at the proportion of people recorded in years 2011, 2013, and 2015 who eats fruits and vegetables less than once daily. Income is divided into 6 levels:
+
+Table 1.1
 | Income | Level |
 |--------|-------|
 | less than $15,000 | 1 |
@@ -31,8 +33,10 @@ Data years: 2011,2013,2015
 Removed irrelevant columns, remaining columns include year,state,obesity percentage,fruit percentage,veg percentage,income,location,income2
 year only includes 2011, 2013, 2015 since the rest of data did not have enough data points for our analysis.
 Moved obesity, fruit, vegetable percentage to one column for every income level. 
+
 ## Methods
 We will be defining the consumption of fruit and vegetables as our two main predictor variables and see how it affects the obesity rates.  First, we took the means of the predictor variables to normalize the data making it easier to interpret and reduce the variability.
+
 ## Results
 ## Conclusion
 ## Appendix

@@ -40,9 +40,9 @@ We will be defining the consumption of fruit and vegetables as our two main pred
 ## Results
 We begin with scatterplots to get a visual of the data.
 
-#### Plot 1.1: Less than one fruit per day VS Rate of obesity (Normalized) <br/>
+#### Figure 1.1: Less than one fruit per day VS Rate of obesity (Normalized) <br/>
 ![Less than one fruit VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101514465-aba94c80-3953-11eb-822b-714dbded7b7d.png) <br/>
-#### Plot 1.2: Less than one vegetable per day VS Rate of obesity (Normalized) <br/>
+#### Figure 1.2: Less than one vegetable per day VS Rate of obesity (Normalized) <br/>
 ![Less than one veggie VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101514468-ac41e300-3953-11eb-924b-a2c7e930913a.png)
 
 From the scatterplots, there visually appears to be a relationship between eating fruits or vegetables and obesity. However, we will get into more depth analysis to better understand the relationships. 

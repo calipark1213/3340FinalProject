@@ -4,16 +4,11 @@
 - Jacob Miller _B00795932_
 - Seoyeon Cali Park _B00768397_
 
-## Abstract
-1.	Our objective is to perform a full regression analysis of using a subset of the CDC data set found on https://lionbridge.ai/datasets/10-open-datasets-for-linear-regression/ using the techniques covered in Math/Stat3340. <br/>
-    i. Some of the data points in the CDC data set have been removed due to irrelevance and or insufficient size. <br/>
-    ii. Data columns have been removed to better fit our research question. <br/>
-    iii.  We have added a new data point to Alabama - this is to ensure that our data set is unique compared to others with the same data set. <br/>
-    _Note: ii and iii will be discussed further in the Data Description section_ <br/>
-2.	We would like to answer the following questions: Does the daily consumption of fruits and vegetables have an effect on the obesity rates? Is there a relationship between income and obesity?
+## Abstract 
+Body Mass Index (BMI) is a screening tool to determine the status of an individual's weight. One can calculate BMI by taking their weight in kilograms and dividing it by the squared height in meters. This project attempts to perform a full regression analysis using the tools learned in Math/Stat3340 and determine if there exists a relationship between the percentage of adults aged 18 years and older who have obesity and percentage of less than one fruit/vegetable consumed daily. We have exported our data from the _CDC data: Nutrition, Physical Activity, Obesity_ found on https://lionbridge.ai/datasets/10-open-datasets-for-linear-regression/, and will be using a subset of the data points from this document. Between fruit consumption and obesity rates and vegetable consumption and obesity rates, vegetable consumption had a higher R- squared value. Our results suggest that there exists a relationship between fruit consumptions and obesity rates as well as vegetable rates and obesity rates. 
 
-## Introduction
-This data analysis project uses techniques of regression analysis to determine what type of relationship exists between obesity rates, daily fruit and vegetable consumption, and income. We will only be looking at the proportion of people recorded in years 2011, 2013, and 2015 who eats fruits and vegetables less than once daily. Income is divided into 6 levels: <br/>
+## Introduction (must contain a thorough description of the questions of interest)
+This data analysis project uses techniques of regression analysis to determine if there exists a type of relationship between obesity rates, daily fruit and vegetable consumption, and income. We have filtered the CDC data set to better fit our research question. This included removing non-existent data points as well as irrelavant data columns. The remaining 6 columns can be found in the _data_prime.csv tab_. We will only be looking at the proportion of people recorded in years 2011, 2013, and 2015 who eats fruits and vegetables less than once daily, since other data points were deemed insufficient to answer our research question. To make the analysis more proficient, the income column was categoried into 6 levels: <br/>
 #### Table 1.1
 | Income | Level |
 |--------|-------|
@@ -24,18 +19,19 @@ This data analysis project uses techniques of regression analysis to determine w
 | $50,000 - $74,999 | 5 |
 | $75,000 or greater per year  | 6 | 
 
-We will be using the techniques we learned from Math/Stat3340, which includes performing simple/multiple linear regression, calculating maximum likelihood, residual analysis, analysis of variance, etc. These techniques will be discussed further in the methods section. 
 
-## Data Description
+
 Data years: 2011,2013,2015
 Removed irrelevant columns, remaining columns include year,state,obesity percentage,fruit percentage,veg percentage,income,location,income2
 year only includes 2011, 2013, 2015 since the rest of data did not have enough data points for our analysis.
 Moved obesity, fruit, vegetable percentage to one column for every income level. 
 
-## Methods
+## Data Description (must contain data visualizations that are properly labelled and explained)
+
+## Methods (must contain a complete description of all analysis tools used)
 We will be defining the consumption of fruit and vegetables as our two main predictor variables, x<sub>1</sub> and x<sub>2</sub> respectively, and fit a linear regression model to determine if it has an affect on obesity rates. Before we fit the model, we begin by normalizing the predictor variables by taking the mean and subtracting it from each point to allow easier interpretation and to reduce variability. 
 
-## Results
+## Results (all figures should be properly labelled and discussed)
 We begin with scatterplots to get a general visualization of the data we are working with. 
 
 #### Figure 1.1: Less than one fruit per day VS Rate of obesity (Normalized) <br/>
@@ -48,8 +44,11 @@ We begin with scatterplots to get a general visualization of the data we are wor
 
 From the scatterplots, we see that there appears to be a relationship between eating fruits or vegetables and obesity. However, we will perform a more in depth analysis to better understand the relationships. 
 
-## Conclusion
-## Appendix
+## Conclusion (must contain a concise discussion of what has been learned from the analysis)
+## Appendix (must include all data and R Markdown files for reproducibility)
+
+
+
 ## Rerefences
 
 

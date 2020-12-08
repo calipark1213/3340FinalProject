@@ -35,9 +35,16 @@ for (i in seq_along(df$x2)) {
   df$x2[i] = df$veg[i] - mVeg
 }
 ```
+
 ```{r}
-lm(y ~ x1 + x2, data = df) -> lm1
+lm(y ~ x1, data = df) -> lm1
 summary(lm1)
+lm(y ~ x2, data = df) -> lm2
+summary(lm2)
+lm(y ~ x1 + x2, data = df) -> lm1.2
+summary(lm1.2)
+#lm(y ~ x1*x2, data = df) -> lm12
+#summary(lm12)
 ```
 
 ```{r message=FALSE, warning=FALSE}

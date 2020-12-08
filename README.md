@@ -65,6 +65,7 @@ We begin with scatterplots to get a visual of the data.
 
 
 https://github.com/github/hub/issues/new?assignees=&labels=bug&template=bug_report.md&title=
+https://web.stanford.edu/~kjytay/courses/stats32-aut2019/Session%208/Markdown%20Cheatsheet.pdf
 **Bold** and _Italic_ and `Code` text
 
 

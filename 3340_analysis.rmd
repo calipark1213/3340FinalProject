@@ -36,8 +36,8 @@ for (i in seq_along(df$x2)) {
 }
 ```
 ```{r}
-lm(y ~ x1 + x2, data = df) -> lm2
-summary(lm2)
+lm(y ~ x1 + x2, data = df) -> lm1
+summary(lm1)
 ```
 
 ```{r message=FALSE, warning=FALSE}

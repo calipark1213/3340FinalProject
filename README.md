@@ -22,6 +22,7 @@ This data analysis project uses techniques of regression analysis to determine w
 4. $35,000 - $49,999
 5. $50,000 - $74,999
 6. $75,000 or greater per year.
+
 We will be using the techniques we learned from Math/Stat3340, which includes performing simple/multiple linear regression, calculating maximum likelihood, residual analysis, analysis of variance, etc. These techniques will be discussed further in the methods section. 
 
 ## Data Description

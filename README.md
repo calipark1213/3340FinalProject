@@ -38,6 +38,11 @@ Moved obesity, fruit, vegetable percentage to one column for every income level.
 We will be defining the consumption of fruit and vegetables as our two main predictor variables and see how it affects the obesity rates.  First, we took the means of the predictor variables to normalize the data making it easier to interpret and reduce the variability.
 
 ## Results
+Plot 1.1: Less than one fruit per day VS Rate of obesity (Normalized)
+![Less than one fruit VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101514465-aba94c80-3953-11eb-822b-714dbded7b7d.png)
+Plot 1.2: Less than one vegetable per day VS Rate of obesity (Normalized)
+![Less than one veggie VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101514468-ac41e300-3953-11eb-924b-a2c7e930913a.png)
+
 
 
 ## Conclusion

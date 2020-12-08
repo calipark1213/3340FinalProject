@@ -15,7 +15,7 @@
 
 ## Introduction
 
-This data analysis project uses techniques of regression analysis to determine what type of relationship exists between obesity rates, daily fruit and vegetable consumption, and income. We will only be looking at the proportion of people who eats fruits and vegetables less than once daily. Income is divided into 6 levels. 
+This data analysis project uses techniques of regression analysis to determine what type of relationship exists between obesity rates, daily fruit and vegetable consumption, and income. We will only be looking at the proportion of people recorded in years 2011, 2013, and 2015 who eats fruits and vegetables less than once daily. Income is divided into 6 levels:
 1. individuals who make less than $15,000
 2. $15,000 -  $24,999
 3. $25,000 - $34,999

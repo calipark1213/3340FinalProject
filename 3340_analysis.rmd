@@ -18,20 +18,20 @@ mean(df$fruit) -> mFruit
 mean(df$veg) -> mVeg
 
 newCol <- c(1:918) 
-df <- cbind(df, obesity2 = newCol)
-for (i in seq_along(df$obesity2)) {
-  df$obesity2[i] = df$obesity[i] - mObesity
+df <- cbind(df, y = newCol)
+for (i in seq_along(df$y)) {
+  df$y[i] = df$obesity[i] - mObesity
 }
 
 newCol <- c(1:918) 
-df <- cbind(df, fruit2 = newCol)
-for (i in seq_along(df$fruit2)) {
-  df$fruit2[i] = df$fruit[i] - mFruit
+df <- cbind(df, x1 = newCol)
+for (i in seq_along(df$x1)) {
+  df$x1[i] = df$fruit[i] - mFruit
 }
 
 newCol <- c(1:918) 
-df <- cbind(df, veg2 = newCol)
-for (i in seq_along(df$veg2)) {
-  df$veg2[i] = df$veg[i] - mVeg
+df <- cbind(df, x2 = newCol)
+for (i in seq_along(df$x2)) {
+  df$x2[i] = df$veg[i] - mVeg
 }
 ```

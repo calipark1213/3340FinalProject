@@ -5,24 +5,21 @@
 - Seoyeon Cali Park _B00768397_
 
 ## Abstract
-
-1. Our objective is to perform a full regression analysis of using a subset of the CDC data set found on https://lionbridge.ai/datasets/10-open-datasets-for-linear-regression/ using the techniques covered in Math/Stat3340. 
-    - Some of the data points in the CDC data set have been removed due to insufficient sample size. 
-    - Data columns have been removed (indicated in the R code) to better fit our research question. 
-    - We have added a new data point to Alabama - this is to ensure that our data set is unique compared to others with the same data set, more reasoning behind this data point is discussed in the data description section. 
-
-2. We would like to answer the following research question: Does income have an effect on the obesity rates of people who eat fruits and vegetables daily?
+1.	Our objective is to perform a full regression analysis of using a subset of the CDC data set found on https://lionbridge.ai/datasets/10-open-datasets-for-linear-regression/ using the techniques covered in Math/Stat3340. <br/>
+    i. Some of the data points in the CDC data set have been removed due to irrelevance and or insufficient size. <br/>
+    ii. Data columns have been removed to better fit our research question. <br/>
+    iii.  We have added a new data point to Alabama - this is to ensure that our data set is unique compared to others with the same data set. <br/>
+    _Note: ii and iii will be discussed further in the Data Description section_ <br/>
+2.	We would like to answer the following research question: Does income have an effect on the obesity rates of people who eat fruits and vegetables daily?
 
 ## Introduction
-
-This data analysis project uses techniques of regression analysis to determine what type of relationship exists between obesity rates, daily fruit and vegetable consumption, and income. We will only be looking at the proportion of people recorded in years 2011, 2013, and 2015 who eats fruits and vegetables less than once daily. Income is divided into 6 levels:
+This data analysis project uses techniques of regression analysis to determine what type of relationship exists between obesity rates, daily fruit and vegetable consumption, and income. We will only be looking at the proportion of people recorded in years 2011, 2013, and 2015 who eats fruits and vegetables less than once daily. Income is divided into 6 levels: <br/>
 1. individuals who make less than $15,000
 2. $15,000 -  $24,999
 3. $25,000 - $34,999
 4. $35,000 - $49,999
 5. $50,000 - $74,999
-6. $75,000 or greater per year.
-
+6. $75,000 or greater per year. <br/>
 We will be using the techniques we learned from Math/Stat3340, which includes performing simple/multiple linear regression, calculating maximum likelihood, residual analysis, analysis of variance, etc. These techniques will be discussed further in the methods section. 
 
 ## Data Description

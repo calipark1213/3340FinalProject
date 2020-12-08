@@ -38,6 +38,8 @@ Moved obesity, fruit, vegetable percentage to one column for every income level.
 We will be defining the consumption of fruit and vegetables as our two main predictor variables and see how it affects the obesity rates.  First, we took the means of the predictor variables to normalize the data making it easier to interpret and reduce the variability.
 
 ## Results
+
+
 ## Conclusion
 ## Appendix
 ## Rerefences

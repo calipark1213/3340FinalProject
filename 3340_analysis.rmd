@@ -1,0 +1,37 @@
+---
+title: "3340_Project_Analysis"
+author: "Jacob, Chris, Cali"
+date: "06/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(dplyr)
+library(tidyverse)
+read.csv("C:\\Users\\jacob\\Desktop\\data_prime.csv") -> df
+```
+
+
+```{r, message=FALSE}
+mean(df$obesity) -> mObesity
+mean(df$fruit) -> mFruit
+mean(df$veg) -> mVeg
+
+newCol <- c(1:918) 
+df <- cbind(df, obesity2 = newCol)
+for (i in seq_along(df$obesity2)) {
+  df$obesity2[i] = df$obesity[i] - mObesity
+}
+
+newCol <- c(1:918) 
+df <- cbind(df, fruit2 = newCol)
+for (i in seq_along(df$fruit2)) {
+  df$fruit2[i] = df$fruit[i] - mFruit
+}
+
+newCol <- c(1:918) 
+df <- cbind(df, veg2 = newCol)
+for (i in seq_along(df$veg2)) {
+  df$veg2[i] = df$veg[i] - mVeg
+}
+```

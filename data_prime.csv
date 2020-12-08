@@ -1,4 +1,4 @@
-Year,State,% obesity,Fruit consumption, Vegetable Consumption, Income, Location, Income level
+Year, State, % obesity, % Fruit consumption, % Vegetable Consumption, Income, Location, Income level
 2011,Alabama,38.5,51.8,35.5,"Less than $15,000","(32.84057112200048, -86.63186076199969)",1
 2011,Alabama,34.8,43.9,27.7,"$15,000 - $24,999","(32.84057112200048, -86.63186076199969)",2
 2011,Alabama,35.8,45.5,29.4,"$25,000 - $34,999","(32.84057112200048, -86.63186076199969)",3

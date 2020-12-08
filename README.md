@@ -32,6 +32,7 @@ Removed irrelevant columns, remaining columns include year,state,obesity percent
 year only includes 2011, 2013, 2015 since the rest of data did not have enough data points for our analysis.
 Moved obesity, fruit, vegetable percentage to one column for every income level. 
 ## Methods
+We will be defining the consumption of fruit and vegetables as our two main predictor variables and see how it affects the obesity rates.  First, we took the means of the predictor variables to normalize the data making it easier to interpret and reduce the variability.
 ## Results
 ## Conclusion
 ## Appendix

@@ -35,3 +35,15 @@ for (i in seq_along(df$x2)) {
   df$x2[i] = df$veg[i] - mVeg
 }
 ```
+```{r}
+lm(y ~ x1 + x2, data = df) -> lm2
+summary(lm2)
+```
+
+```{r message=FALSE, warning=FALSE}
+attach(df)
+plot(x1,y, xlab = "Less than one fruit per day (Normalized, μ = 40.35%)", ylab = "Rate of obesity (Normalized, μ = 30.08%)")
+abline(lm(y ~ x1))
+plot(x2,y, xlab = "Less than one vegetable per day (Normalized, μ = 24.18%)", ylab = "Rate of obesity (Normalized, μ = 30.08%)")
+abline(lm(y ~ x2))
+```

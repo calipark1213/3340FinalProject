@@ -39,12 +39,15 @@ for (i in seq_along(df$x2)) {
 ```{r}
 lm(y ~ x1, data = df) -> lm1
 summary(lm1)
+lm1$coefficients
+
 lm(y ~ x2, data = df) -> lm2
 summary(lm2)
+lm2$coefficients
+
 lm(y ~ x1 + x2, data = df) -> lm1.2
 summary(lm1.2)
-#lm(y ~ x1*x2, data = df) -> lm12
-#summary(lm12)
+lm1.2$coefficients
 ```
 
 ```{r, message=FALSE}

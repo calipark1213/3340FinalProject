@@ -5,10 +5,11 @@
 - Seoyeon Cali Park _B00768397_
 
 ## Abstract 
-Body Mass Index (BMI) is a screening tool to determine the status of an individual's weight. One can calculate BMI by taking their weight in kilograms and dividing it by the squared height in meters. This project attempts to perform a full regression analysis using the tools learned in Math/Stat3340 and determine if there exists a relationship between the percentage of adults aged 18 years and older who have obesity and percentage of less than one fruit/vegetable consumed daily. We have exported our data from https://lionbridge.ai/datasets/10-open-datasets-for-linear-regression/ _CDC data: Nutrition, Physical Activity, Obesity_ , and will be using a subset of the data points from this document. Between fruit consumption and obesity rates and vegetable consumption and obesity rates, vegetable consumption had a higher R- squared value. Our results suggest that there exists a relationship between fruit consumptions and obesity rates as well as vegetable rates and obesity rates. 
+Body Mass Index (BMI) is a screening tool to determine the status of an individual's weight. One can calculate BMI by taking their weight in kilograms and dividing it by the squared height in meters. [1] This project attempts to perform a full regression analysis using the tools learned in Math/Stat3340 and determine if there exists a relationship between the percentage of adults aged 18 years and older who have obesity and percentage of less than one fruit/vegetable consumed daily. We have exported our data from https://lionbridge.ai/datasets/10-open-datasets-for-linear-regression/ _CDC data: Nutrition, Physical Activity, Obesity_ [2] , and will be using a subset of the data points from this document. Between fruit consumption and obesity rates and vegetable consumption and obesity rates, vegetable consumption had a higher R- squared value. Our results suggest that there exists a relationship between fruit consumptions and obesity rates as well as vegetable rates and obesity rates. 
 
 ## Introduction (must contain a thorough description of the questions of interest)
-This data analysis project uses techniques of regression analysis to determine if there exists a type of relationship between obesity rates, daily fruit and vegetable consumption, and income. We have filtered the CDC data set to better fit our research question. This included removing non-existent data points as well as irrelavant data columns. The remaining 6 columns can be found in the _data_prime.csv tab_. We will only be looking at the proportion of people recorded in years 2011, 2013, and 2015 who eats fruits and vegetables less than once daily, since other data points were deemed insufficient to answer our research question. To make the analysis more proficient, the income column was categoried into 6 levels: <br/>
+
+This data analysis project uses techniques of regression analysis to determine if there exists a type of relationship between obesity rates, daily fruit and vegetable consumption, and income. We have filtered the CDC data set to better fit our research question. This included removing non-existent data points as well as irrelavant data columns. The remaining formatted data points can be found in the _data_prime.csv tab_. This  only be looking at the proportion of people recorded in years 2011, 2013, and 2015 who eats fruits and vegetables less than once daily. To make the analysis more proficient, the income column was categoried into 6 levels: <br/>
 #### Table 1.1
 | Income | Level |
 |--------|-------|
@@ -45,6 +46,9 @@ After using the library dplyr on R to filter our irrelevant data points, we then
 
 
 ## Rerefences
+[1] Center for Disease Control and Prevention. (2020, September 17).  About Adult BMI. _cdc.gov_ https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html  <br/>
+[2] Center for Disease Control and Prevention. (2020, October 29).  Healthy Food Environments. _cdc.gov_ https://www.cdc.gov/nutrition/healthy-food-environments/index.html
+[3] Suzanne. (2018, March 23).CDC Data: Nutrition, Physical Activity, & Obesity. _kaggle.com_ https://www.kaggle.com/spittman1248/cdc-data-nutrition-physical-activity-obesity
 
 
 1.Perform least-squares estimation, hypothesis testing and interval estimation for simple linear regression models by hand and using R.

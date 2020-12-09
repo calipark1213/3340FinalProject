@@ -94,7 +94,7 @@ We performed a robust statistical analysis on all the variables (fruits, vegetab
 #### Table 1.x - Linear and Robust Coefficients
 | Model | Intercept | x<sub>1</sub> | x<sub>2</sub> |
 |-----|-----|-----|-----|-----|
-| y ~ x<sub>1</sub> lm| ~0 | 0.6412 ||
+| y ~ x<sub>1</sub> lm | ~0 | 0.6412 ||
 | y ~ x<sub>1</sub> rlm | -0.0012 | 0.6789 ||
 | y ~ x<sub>2</sub> lm | ~0 || 0.6013 |
 | y ~ x<sub>2</sub> rlm | -0.0083 || 0.6194 |

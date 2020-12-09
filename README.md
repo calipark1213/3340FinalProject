@@ -74,6 +74,8 @@ To ensure the prediction interval stays within a realistic range, we also tested
 
 Using the obesity mean 30.08%, we determine that this healthy population is no more than 18.66% obese but no less than 4.67%. Therefore, by testing prediciton interval bounds, we can say our multiple linear regression model is accurate and realistic.
 
+Residual analysis also plays a key role in determine the strength of our model.
+
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)
 We have filtered the CDC data set to better fit our research question. This included removing non-existent data points as well as irrelavant data columns. The remaining 6 columns can be found in the _data_prime.csv tab_.

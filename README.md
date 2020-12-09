@@ -48,6 +48,9 @@ We begin with scatterplots to get a general visualization of the data we are wor
 ![Less than one veggie VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101521588-6e958800-395c-11eb-92a4-12560392ba44.png) <br/>
 **_y_ = 0.3904x<sub>2</sub> - 4.421E-17**  
 
+Using the linear models, we estimate that a 1% increase in the rate of those who eat less than one fruit a day in a sample population leads to a 0.4582% increase in the rate of obesity.
+Similarly, we can estimate that a 1% increase in the rate of those who eat less than one vegetale a day in a sample population leads to a 0.3904% increase in the rate of obesity.
+
 From the scatterplots, we see that there appears to be a relationship between eating fruits or vegetables and obesity. Both models have a p-value less than 10<sup>-15</sup>. If we were to test an alternate hypothesis that β<sub>i</sub> ≠ 0, at α = 0.95 we can condlude that fruits and vegetables are (independently) closely related.  However, we will perform a more in depth analysis to better understand the relationships. 
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)

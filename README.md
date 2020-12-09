@@ -8,9 +8,8 @@
 Body Mass Index (BMI) is a screening tool to determine the status of an individual's weight. One can calculate BMI by taking their weight in kilograms and dividing it by the squared height in meters. [1] This project attempts to perform a full regression analysis using the tools learned in Math/Stat3340 and determine if there exists a relationship between the percentage of adults aged 18 years and older who have obesity and percentage of less than one fruit/vegetable consumed daily. We have extracted our data from https://lionbridge.ai/datasets/10-open-datasets-for-linear-regression/ _CDC data: Nutrition, Physical Activity, Obesity_ [3] , and will be using a subset of the data points from this document. The interaction model of fruit and vegetable consumption had highest R-squared value. Our results suggest that there exists a relationship between fruit consumptions and obesity rates as well as vegetable rates and obesity rates. 
 
 ## Introduction (must contain a thorough description of the questions of interest)
-This data analysis project uses techniques of regression analysis to determine if there exists a type of relationship between obesity rates, daily fruit and vegetable consumption, and income. Accoring to the Center for Disease Control and Prevention (CDC), being obese is categorized as having a BMI value of 30.0 and above. [1] Note that although BMI correlates with amount of body fat, the actual amount of body fat may differ for two individuals of the same weight due to other factors such as daily exercise.  
-Eating fruits and vegetables from variety of different groups 
-We have filtered the CDC data set to better fit our research question. This included removing non-existent data points as well as irrelavant data columns. The remaining formatted data points can be found in the _data_prime.csv tab_. This  only be looking at the proportion of people recorded in years 2011, 2013, and 2015 who eats fruits and vegetables less than once daily. To make the analysis more proficient, the income column was categoried into 6 levels: <br/>
+This data analysis project uses techniques of regression analysis to determine if there exists a type of relationship between obesity rates, daily fruit and vegetable consumption, and income. According to the Center for Disease Control and Prevention (CDC), being obese is categorized as having a BMI value of 30.0 and above. [1] Note that although BMI correlates with amount of body fat, the actual amount of body fat may differ for two individuals of the same weight due to other factors such as daily exercise. Eating fruits and vegetables from different groups also lower the risk of being obese. Fruits and vegetables can contribute to having a lower caloric intake which helps reducing the risk of weight gain. [4] This suggests that daily fruit and vegetable consumption is somehow related to an individual’s BMI level. <br/>
+Here we strive to answer the following question using regression analysis: Is there a relationship between the percentage of adults aged 18 years and older who have obesity and percentage of less than one fruit/vegetable consumed daily? Although how the original data gathered is unknown, we have filtered the data set to fit our research question. This included removing non-existent data points as well as irrelevant data columns. The data set we will be working with can be found under the _data_prime.csv_ tab. This only be looking at the proportion of people recorded in years 2011, 2013, and 2015 who eats fruits and vegetables less than once daily. We will be setting the percentage of obesity rates as our response variables, and fruit/vegetable consumption as our predictor variable. In addition, to make the analysis more proficient, the income column was categorized into 6 levels: <br/>
 #### Table 1.1
 | Income | Level |
 |--------|-------|
@@ -21,7 +20,17 @@ We have filtered the CDC data set to better fit our research question. This incl
 | $50,000 - $74,999 | 5 |
 | $75,000 or greater per year  | 6 |  
 
-We will be setting the percentage of obesity rates as our response variables, and fruit/vegetable consumption as our predictor variable. We believe that this is a good choice for the reason that
+The techniques of regression analysis in this paper includes the following: 
+1.	Least-squares estimation, hypothesis testing, and interval estimation for simple and multiple linear regression
+2.	Maximum likelihood estimation and prediction of new observations
+3.	Checking for model adequacy using residual analysis, detection and treatment of outliers, and tests for lack of fit
+4.	Applying transformation to correct inadequate models
+5.	Leverage and influence diagnostics
+6.	Discussing potential multicollinearity
+7.	Variable selection and Analysis of Variance 
+8.	Robust Regression
+ 
+
 
 ## Data Description (must contain data visualizations that are properly labelled and explained)
 

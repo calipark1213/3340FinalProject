@@ -57,6 +57,7 @@ For finding the actual estimated obesity rate, simply take _y_ and add the mean,
 From the scatterplots, we see that there appears to be a relationship between eating fruits or vegetables and obesity. Both models have a p-value less than 10<sup>-15</sup>. If we were to test an alternate hypothesis that β<sub>i</sub> ≠ 0, at α = 0.95 we can reject a null hypothesis that β<sub>i</sub> = 0 and conclude that fruit and vegetable consumption are (independently and separately) closely related to obesity. However, we will perform a more in-depth analysis to better understand the relationships.
 
 When performing multiple linear regression, we get the model _y_ = 0.318x<sub>1</sub> + 0.2311x<sub>2</sub> - 6.783E-16. This also produced a multiple _R<sup>2</sup>_ value of 0.4983, the strongest correlation yet. Similar to the simple linear regressions, if we test an alternate hypothesis that not all β<sub>i</sub> = 0, we can reject the null hypothesis of β<sub>1</sub> = β<sub>2</sub> = 0 at α = 0.95 because our p-value is near zero as determined from the linear regression. Using `predict` in R, we get
+**Table 1.2 - 95% Prediction Interval** 
 || fit | lwr | upr |
 |--------|-------|-------|-------|
 | 1 | 36.4907 | 29.20862 | 43.77278 |

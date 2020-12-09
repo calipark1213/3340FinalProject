@@ -98,7 +98,7 @@ We performed a robust statistical analysis on all the variables (fruits, vegetab
 | y ~ x<sub>1</sub> rlm | -0.0057 | 0.4852 | |
 | y ~ x<sub>2</sub> lm | ~0 | | 0.3904 |
 | y ~ x<sub>2</sub> rlm | 0.0412 | | 0.4021 |
-| y ~ x<sub>1</sub> + x<sub>2</sub> lm | ~0 | 0.3180 | 0.0.2311 |
+| y ~ x<sub>1</sub> + x<sub>2</sub> lm | ~0 | 0.3180 | 0.2311 |
 | y ~ x<sub>1</sub> + x<sub>2</sub> rlm | 0.0878 | 0.3195 | 0.2381 |
 
 

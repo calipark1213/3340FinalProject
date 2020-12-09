@@ -91,12 +91,20 @@ Looking at the residuals VS fitted plot of lm(1.2), there is a slight evidence o
 
 
 We performed a robust statistical analysis on all the variables (fruits, vegetables, and the interaction of the two) to also test if there are any major outliers or unequal variance in the data. If you look at the coefficients of the slope in both the original linear model and the robust linear model, they are essentially the same value. The intercepts appear to be off but that is a result of normalizing the data by subtracting the mean from their values. Based on the results of the robust statistics, it is fair to say that there are no significant outliers in our dataset that could cause false observations.
+#### Table 1.x - Linear and Robust Coefficients
+| Test | Intercept | x<sub>1</sub> | x<sub>2</sub> |
+| y ~ x<sub>1</sub> lm| ~0 | 0.6412 ||
+| y ~ x<sub>1</sub> rlm | -0.0012 | 0.6789 ||
+| y ~ x<sub>2</sub> lm | ~0 || 0.6013 |
+| y ~ x<sub>2</sub> rlm | -0.0083 || 0.6194 |
+| y ~ x<sub>1</sub> + x<sub>2</sub> lm | ~0 | 0.4449 | 0.3560 |
+| y ~ x<sub>1</sub> + x<sub>2</sub> rlm | 0.0178 | 0.4471 | 0.3667 |
 
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)
 We have filtered the CDC data set to better fit our research question. This included removing non-existent data points as well as irrelavant data columns. The remaining 6 columns can be found in the _data_prime.csv tab_.
-After using the library dplyr on R to filter our irrelevant data points, we then exported the file to a csv and formatted our final _data_prime.csv_. To have better data to read visually, we have created columns for fruit/vegetable consumption and moved the corresponding cell value to the new columns. In addition, we have made  
+After using the library dplyr on R to filter our irrelevant data points, we then exported the file to a csv and formatted our final _data_prime.csv_. To have better data to read visually, we have created columns for fruit/vegetable consumption and moved the corresponding cell value to the new columns. In addition, we have made  **???????**
 
 
 ## Rerefences

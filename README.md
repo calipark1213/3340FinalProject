@@ -53,6 +53,8 @@ Similarly, we can estimate that a 1% increase in the rate of those who eat less 
 
 From the scatterplots, we see that there appears to be a relationship between eating fruits or vegetables and obesity. Both models have a p-value less than 10<sup>-15</sup>. If we were to test an alternate hypothesis that β<sub>i</sub> ≠ 0, at α = 0.95 we can condlude that fruits and vegetables are (independently) closely related.  However, we will perform a more in depth analysis to better understand the relationships. 
 
+When using a multiple lienar regression, we get the model _y_ = 0.318x<sub>1</sub> + 0.2311x<sub>2</sub>
+
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)
 We have filtered the CDC data set to better fit our research question. This included removing non-existent data points as well as irrelavant data columns. The remaining 6 columns can be found in the _data_prime.csv tab_.

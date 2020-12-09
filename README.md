@@ -58,14 +58,14 @@ From the scatterplots, we see that there appears to be a relationship between ea
 
 When performing multiple linear regression, we get the model _y_ = 0.318x<sub>1</sub> + 0.2311x<sub>2</sub> - 6.783E-16. This also produced a multiple _R<sup>2</sup>_ value of 0.4983, the strongest correlation yet. Similar to the simple linear regressions, if we test an alternate hypothesis that not all β<sub>i</sub> = 0, we can reject the null hypothesis of β<sub>1</sub> = β<sub>2</sub> = 0 at α = 0.95 because our p-value is near zero as determined from the linear regression. Using `predict` in R, we get
 
-Another important question to ask is can our multiple linear model accurately predict data using prediction intervals? We tested this idea by looking at a sample size where no one gets their daily fruits and vegetables in daily.
+Another important question to ask is can our multiple linear model accurately predict data using prediction intervals? We tested this idea by looking at a sample size where no one gets their fruits and vegetables in daily.
 
 **Table 1.2 - 95% Prediction Interval** 
 || fit | lwr | upr |
 |--------|-------|-------|-------|
 | 1 | 36.4907 | 29.20862 | 43.77278 |
 
-Using a least squares estimate, is it estimated that this population would be 36.4907% above the mean obesity, so 66.57% of all individuals in this sample are obese.
+Using a least squares estimate, is it estimated that this population would be 36.4907% above the mean obesity, so an estimated 66.57% of all individuals in this sample are obese, with an upper bound of 73.85%. When relating this back to our actual data, it appears a fair estimation of this sample, although we not expect to ever find a population where this situation exists.
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)

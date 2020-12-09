@@ -39,7 +39,7 @@ We begin with scatterplots to get a general visualization of the data we are wor
 ![Less than one veggie VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101521588-6e958800-395c-11eb-92a4-12560392ba44.png) <br/>
 **_y_ = 0.3904x<sub>2</sub> - 4.421E-17**  
 
-From the scatterplots, we see that there appears to be a relationship between eating fruits or vegetables and obesity. However, we will perform a more in depth analysis to better understand the relationships. 
+From the scatterplots, we see that there appears to be a relationship between eating fruits or vegetables and obesity. Both models have a p-value less than 10^^15 However, we will perform a more in depth analysis to better understand the relationships. 
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)

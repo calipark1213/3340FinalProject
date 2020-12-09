@@ -94,12 +94,12 @@ We performed a robust statistical analysis on all the variables (fruits, vegetab
 #### Table 1.x - Linear and Robust Coefficients
 | Model | Intercept | x<sub>1</sub> | x<sub>2</sub> |
 |-----|-----|-----|-----|
-| y ~ x<sub>1</sub> lm | ~0 | 0.6412 | |
-| y ~ x<sub>1</sub> rlm | -0.0012 | 0.6789 | |
-| y ~ x<sub>2</sub> lm | ~0 | | 0.6013 |
-| y ~ x<sub>2</sub> rlm | -0.0083 | | 0.6194 |
-| y ~ x<sub>1</sub> + x<sub>2</sub> lm | ~0 | 0.4449 | 0.3560 |
-| y ~ x<sub>1</sub> + x<sub>2</sub> rlm | 0.0178 | 0.4471 | 0.3667 |
+| y ~ x<sub>1</sub> lm | ~0 | 0.4582 | |
+| y ~ x<sub>1</sub> rlm | -0.0057 | 0.4852 | |
+| y ~ x<sub>2</sub> lm | ~0 | | 0.3904 |
+| y ~ x<sub>2</sub> rlm | 0.0412 | | 0.4021 |
+| y ~ x<sub>1</sub> + x<sub>2</sub> lm | ~0 | 0.3180 | 0.0.2311 |
+| y ~ x<sub>1</sub> + x<sub>2</sub> rlm | 0.0878 | 0.3195 | 0.2381 |
 
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)

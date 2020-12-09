@@ -9,6 +9,7 @@ output: html_document
 library(dplyr)
 library(tidyverse)
 library(car)
+library(MASS)
 read.csv("C:\\Users\\jacob\\Desktop\\data_prime.csv") -> df
 ```
 
@@ -80,4 +81,20 @@ dfedit <- df[-c(197,269,700),]
 dfedit2 <- df[-c(162,202,205),]
 summary(lm(y ~ x1 + x2, data = dfedit))
 summary(lm(y ~ x1 + x2, data = dfedit2))
+```
+
+```{r}
+rlm(y ~ x1, data = df) -> rlm1
+rlm(y ~ x2, data = df) -> rlm2
+rlm(y ~ x1 + x2, data = df) -> rlm1.2
+
+
+lm1$coefficients
+rlm1$coefficients
+
+lm2$coefficients
+rlm2$coefficients
+
+lm1.2$coefficients
+rlm1.2$coefficients
 ```

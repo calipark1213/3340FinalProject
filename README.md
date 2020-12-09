@@ -20,15 +20,17 @@ Here we strive to answer the following question using regression analysis: Is th
 | $50,000 - $74,999 | 5 |
 | $75,000 or greater per year  | 6 |  
 
-The techniques of regression analysis in this paper includes the following: 
-1.	Least-squares estimation, hypothesis testing, and interval estimation for simple and multiple linear regression
-2.	Maximum likelihood estimation and prediction of new observations
-3.	Checking for model adequacy using residual analysis, detection and treatment of outliers, and tests for lack of fit
-4.	Applying transformation to correct inadequate models
-5.	Leverage and influence diagnostics
-6.	Discussing potential multicollinearity
-7.	Variable selection and Analysis of Variance 
-8.	Robust Regression
+The techniques of regression analysis in this paper includes the following: (Found in Math/Stat3340 Syllabus)
+1.Perform least-squares estimation, hypothesis testing and interval estimation for simple linear regression models by hand and using R. <br/>
+2.Perform least-squares estimation, hypothesis testing and interval estimation for multiple linear regression models using R. <br/>
+3.Perform estimation by maximum likelihood and predict new observations using R. <br/>
+4.Check model adequacy via residual analysis, detection and treatment of outliers and tests for lack of fit. <br/>
+5.Employ transformations and weighting to correct model inadequacies. <br/>
+6.Explore diagnostics for leverage and influence. <br/>
+7.Understand and be able to address multicollinearity. <br/>
+8.Select variables and build models using computational techniques. <br/>
+9.ANOVA. <br/>
+10.Modern regression approaches. <br/>
  
 
 
@@ -68,16 +70,7 @@ After using the library dplyr on R to filter our irrelevant data points, we then
 [3] Suzanne. (2018, March 23). CDC Data: Nutrition, Physical Activity, & Obesity. _kaggle.com_ https://www.kaggle.com/spittman1248/cdc-data-nutrition-physical-activity-obesity  <br/>
 [4] U.S. Department of Health and Human Services and U.S. Department of Agriculture. (December 2015). 2015–2020 Dietary Guidelines for Americans _8th Edition_. https://health.gov/our-work/food-nutrition/2015-2020-dietary-guidelines/guidelines/ <br/>
 
-1.Perform least-squares estimation, hypothesis testing and interval estimation for simple linear regression models by hand and using R.
-2.Perform least-squares estimation, hypothesis testing and interval estimation for multiple linear regression models using R.
-3.Perform estimation by maximum likelihood and predict new observations using R.
-4.Check model adequacy via residual analysis, detection and treatment of outliers and tests for lack of fit.
-5.Employ transformations and weighting to correct model inadequacies. 
-6.Explore diagnostics for leverage and influence.
-7.Understand and be able to address multicollinearity.
-8.Select variables and build models using computational techniques.
-9.ANOVA.
-10.Modern regression approaches. 
+ 
 
 
 https://github.com/github/hub/issues/new?assignees=&labels=bug&template=bug_report.md&title=

@@ -78,8 +78,11 @@ Residual analysis also plays a key role in determine the strength of our model.
 #### Figure 1.3: Residuals vs Fitted Plot <br/>
 ![Residuals vs Fitted Plot](https://user-images.githubusercontent.com/74836346/101684987-99a3d880-3a3d-11eb-8b4c-c6b187f08365.png) <br/>
 
-#### Figure 1.3: Normal Q-Q Plot <br/>
+#### Figure 1.4: Normal Q-Q Plot <br/>
 ![Normal Q-Q Plot](https://user-images.githubusercontent.com/74836346/101686427-6cf0c080-3a3f-11eb-9a7b-90e821b9db3e.png) <br/>
+
+#### Figure 1.5: Residuals vs Leverage Plot <br/>
+![Residuals vs Leverage Plot](https://user-images.githubusercontent.com/74836346/101686830-f7392480-3a3f-11eb-9878-c4ecabf3d61d.png) <br/>
 
 
 

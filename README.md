@@ -53,7 +53,7 @@ Similarly, we can estimate that a 1% increase in the rate of those who eat less 
 
 For finding the actual estimated obesity rate, simpy take _y_ and add the mean, 30.08.
 
-From the scatterplots, we see that there appears to be a relationship between eating fruits or vegetables and obesity. Both models have a p-value less than 10<sup>-15</sup>. If we were to test an alternate hypothesis that β<sub>i</sub> ≠ 0, at α = 0.95 we can condlude that fruits and vegetables are (independently) closely related.  However, we will perform a more in depth analysis to better understand the relationships. 
+From the scatterplots, we see that there appears to be a relationship between eating fruits or vegetables and obesity. Both models have a p-value less than 10<sup>-15</sup>. If we were to test an alternate hypothesis that β<sub>i</sub> ≠ 0, at α = 0.95 we can condlude that fruits and vegetables are (independently and separately) closely related.  However, we will perform a more in depth analysis to better understand the relationships. 
 
 When using a multiple lienar regression, we get the model _y_ = 0.318x<sub>1</sub> + 0.2311x<sub>2</sub> - 6.783E-16. This also produced a multiple _R<sup>2</sup>_ value of 0.4983, the strongest correlation yet.
 

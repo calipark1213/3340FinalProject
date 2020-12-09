@@ -8,6 +8,7 @@ output: html_document
 ```{r setup, include=FALSE}
 library(dplyr)
 library(tidyverse)
+library(car)
 read.csv("C:\\Users\\jacob\\Desktop\\data_prime.csv") -> df
 ```
 
@@ -39,15 +40,12 @@ for (i in seq_along(df$x2)) {
 ```{r}
 lm(y ~ x1, data = df) -> lm1
 summary(lm1)
-lm1$coefficients
-
 lm(y ~ x2, data = df) -> lm2
 summary(lm2)
-lm2$coefficients
-
 lm(y ~ x1 + x2, data = df) -> lm1.2
 summary(lm1.2)
-lm1.2$coefficients
+#lm(y ~ x1*x2, data = df) -> lm12
+#summary(lm12)
 ```
 
 ```{r, message=FALSE}
@@ -63,4 +61,23 @@ plot(x2,y, xlab = "Less than one vegetable per day (Normalized, μ = 24.18%)", y
 abline(lm(y ~ x2))
 mylabel = bquote(italic(R)^2 == .(format(0.3616)))
 text(x = 29.5, y = -12.5, labels = mylabel)
+```
+
+```{r}
+obeEst<-data.frame(x1=59.65,x2=75.82)
+predict.lm(lm1.2,newdata=obeEst,interval="prediction")
+
+obeEst<-data.frame(x1=-40.35,x2=-24.18)
+predict.lm(lm1.2,newdata=obeEst,interval="prediction")
+```
+
+```{r}
+plot(lm1.2)
+```
+
+```{r}
+dfedit <- df[-c(197,269,700),]
+dfedit2 <- df[-c(162,202,205),]
+summary(lm(y ~ x1 + x2, data = dfedit))
+summary(lm(y ~ x1 + x2, data = dfedit2))
 ```

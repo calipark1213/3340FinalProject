@@ -41,21 +41,20 @@ We will be defining the consumption of fruit and vegetables as our two main pred
 We begin with scatterplots to get a general visualization of the data we are working with. 
 
 #### Figure 1.1: Less than one fruit per day VS Rate of obesity (Normalized) <br/>
-![Less than one fruit VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101521587-6dfcf180-395c-11eb-9a8d-54b98ff294a6.png) <br/>
+![Less than one fruit VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101662054-65212400-3a1f-11eb-95ae-ffc1606bf1cb.png) <br/>
 **_y_ = 0.4582x<sub>1</sub> - 1.109E-15**  
 
 #### Figure 1.2: Less than one vegetable per day VS Rate of obesity (Normalized) <br/>
-![Less than one veggie VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101521588-6e958800-395c-11eb-92a4-12560392ba44.png) <br/>
+![Less than one veggie VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101662056-65b9ba80-3a1f-11eb-99a6-7d45f7dbe864.png) <br/>
 **_y_ = 0.3904x<sub>2</sub> - 4.421E-17**  
 
-Using the linear models, we estimate that a 1% increase in the rate of those who eat less than one fruit a day in a sample population leads to a 0.4582% increase in the rate of obesity.
-Similarly, we can estimate that a 1% increase in the rate of those who eat less than one vegetale a day in a sample population leads to a 0.3904% increase in the rate of obesity.
+Using the linear models, we estimate that a 1% increase in the rate of those who eat less than one fruit a day in a sample population leads to a 0.4582% increase in the rate of obesity. Similarly, we can estimate that a 1% increase in the rate of those who eat less than one vegetable a day in a sample population leads to a 0.3904% increase in the rate of obesity.
 
-For finding the actual estimated obesity rate, simpy take _y_ and add the mean, 30.08.
+For finding the actual estimated obesity rate, simply take _y_ and add the mean, 30.08.
 
-From the scatterplots, we see that there appears to be a relationship between eating fruits or vegetables and obesity. Both models have a p-value less than 10<sup>-15</sup>. If we were to test an alternate hypothesis that β<sub>i</sub> ≠ 0, at α = 0.95 we can reject a null hypothesis that β<sub>i</sub> = 0 and condlude that fruit and vegetable consumption are (independently and separately) closely related to obesity.  However, we will perform a more in depth analysis to better understand the relationships. 
+From the scatterplots, we see that there appears to be a relationship between eating fruits or vegetables and obesity. Both models have a p-value less than 10<sup>-15</sup>. If we were to test an alternate hypothesis that β<sub>i</sub> ≠ 0, at α = 0.95 we can reject a null hypothesis that β<sub>i</sub> = 0 and conclude that fruit and vegetable consumption are (independently and separately) closely related to obesity. However, we will perform a more in-depth analysis to better understand the relationships.
 
-When using a multiple linear regression, we get the model _y_ = 0.318x<sub>1</sub> + 0.2311x<sub>2</sub> - 6.783E-16. This also produced a multiple _R<sup>2</sup>_ value of 0.4983, the strongest correlation yet. Similar to the simple linear regressions, if we test an alternate hypothesis that not all β<sub>i</sub> = 0, we can reject the null hypothesis of β<sub>1</sub> = β<sub>2</sub> = 0 at α = 0.95 because our p-value is near zero as determined from the linear regression.
+When performing multiple linear regression, we get the model _y_ = 0.318x<sub>1</sub> + 0.2311x<sub>2</sub> - 6.783E-16. This also produced a multiple _R<sup>2</sup>_ value of 0.4983, the strongest correlation yet. Similar to the simple linear regressions, if we test an alternate hypothesis that not all β<sub>i</sub> = 0, we can reject the null hypothesis of β<sub>1</sub> = β<sub>2</sub> = 0 at α = 0.95 because our p-value is near zero as determined from the linear regression.
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)

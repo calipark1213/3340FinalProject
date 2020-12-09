@@ -89,6 +89,10 @@ Residual analysis also plays a key role in determine the strength of our model.
 Looking at the residuals VS fitted plot of lm(1.2), there is a slight evidence of a non-linear relationship. Next, looking at the normal Q-Q plot, all the residuals seem to follow a straight line well. There are 3 data points that are outliers which are 162, 202, and 205 but they seem to follow the general trend well enough to be disregarded. When looking at the Scale-Location plot, the residuals seem to be randomly spread apart. Again there are the same outliers but they still follow the general trend well enough to be disregarded. The last plot to analyze is the Residuals vs Leverage plot. Many data points appear to follow the cook's distance lines, however, some do not, such as observations 197, 269 and 700. Removing entries 162, 202, 205 or 197, 269, 700 only affect _R<sup>2</sup>_ up to 0.01.
 
 
+
+We performed a robust statistical analysis on all the variables (fruits, vegetables, and the interaction of the two) to also test if there are any major outliers or unequal variance in the data. If you look at the coefficients of the slope in both the original linear model and the robust linear model, they are essentially the same value. The intercepts appear to be off but that is a result of normalizing the data by subtracting the mean from their values. Based on the results of the robust statistics, it is fair to say that there are no significant outliers in our dataset that could cause false observations.
+
+
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)
 We have filtered the CDC data set to better fit our research question. This included removing non-existent data points as well as irrelavant data columns. The remaining 6 columns can be found in the _data_prime.csv tab_.

@@ -74,7 +74,12 @@ To ensure the prediction interval stays within a realistic range, we also tested
 
 Using the obesity mean 30.08%, we determine that this healthy population is no more than 18.66% obese but no less than 4.67%. Therefore, by testing prediciton interval bounds, we can say our multiple linear regression model is accurate and realistic.
 
-Residual analysis also plays a key role in determine the strength of our model. Looking at the residuals VS fitted plot of lm(1.2), there is a slight evidence of a non-linear relationship. Next, looking at the normal Q-Q plot, all the residuals seem to follow a straight line well. There are 3 data points that are outliers which are 162, 202, and 205 but they seem to follow the general trend well enough to be disregarded. When looking at the Scale-Location plot, the residuals seem to be randomly spread apart. Again there are the same outliers but they still follow the general trend well enough to be disregarded. The last plot to analyze is the Residuals vs Leverage plot. Most points seem to follow the cook's distance lines except for observation 197, 269, 700. 
+Residual analysis also plays a key role in determine the strength of our model.
+#### Figure 1.2: Less than one vegetable per day VS Rate of obesity (Normalized) <br/>
+![Residuals vs Fitten Plot](https://user-images.githubusercontent.com/74836346/101684987-99a3d880-3a3d-11eb-8b4c-c6b187f08365.png) <br/>
+
+
+Looking at the residuals VS fitted plot of lm(1.2), there is a slight evidence of a non-linear relationship. Next, looking at the normal Q-Q plot, all the residuals seem to follow a straight line well. There are 3 data points that are outliers which are 162, 202, and 205 but they seem to follow the general trend well enough to be disregarded. When looking at the Scale-Location plot, the residuals seem to be randomly spread apart. Again there are the same outliers but they still follow the general trend well enough to be disregarded. The last plot to analyze is the Residuals vs Leverage plot. Most points seem to follow the cook's distance lines except for observation 197, 269, 700. 
 **Try removing these observations and recalculate R^2 value and see if it changes significantly**
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)

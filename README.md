@@ -93,7 +93,7 @@ Looking at the residuals VS fitted plot of lm(1.2), there is a slight evidence o
 We performed a robust statistical analysis on all the variables (fruits, vegetables, and the interaction of the two) to also test if there are any major outliers or unequal variance in the data. If you look at the coefficients of the slope in both the original linear model and the robust linear model, they are essentially the same value. The intercepts appear to be off but that is a result of normalizing the data by subtracting the mean from their values. Based on the results of the robust statistics, it is fair to say that there are no significant outliers in our dataset that could cause false observations.
 #### Table 1.x - Linear and Robust Coefficients
 | Model | Intercept | x<sub>1</sub> | x<sub>2</sub> |
-|-----|-----|-----|-----|-----|
+|-----|-----|-----|-----|
 | y ~ x<sub>1</sub> lm | ~0 | 0.6412 | |
 | y ~ x<sub>1</sub> rlm | -0.0012 | 0.6789 | |
 | y ~ x<sub>2</sub> lm | ~0 | | 0.6013 |

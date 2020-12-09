@@ -64,7 +64,7 @@ Another important question to ask is, does the multiple linear model predict new
 |-----|-----|-----|-----|
 | 1 | 36.4907 | 29.20862 | 43.77278 |
 
-Calculating the least squared estimate showed that this population would be 36.4907% above the mean obesity, so an estimated 66.57% of all individuals in this sample would be obese. The upper bound of this interval was 73.85%. Comparing this interval back to our original data, it appears to predict the sample well. However, in the real life setting, it may be difficult to find a sample where all the individuals would not eat their fruits and vegetables. 
+Calculating the least squares estimate showed that this population would be 36.4907% above the mean obesity, so an estimated 66.57% of all individuals in this sample would be obese. The upper bound of this interval was 73.85%. Comparing this interval back to our original data, it appears to predict the sample well. However, in the real life setting, it may be difficult to find a sample where all the individuals would not eat their fruits and vegetables. 
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)

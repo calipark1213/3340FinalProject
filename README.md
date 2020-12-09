@@ -72,7 +72,7 @@ To ensure the prediction interval stays within a realistic range, we also tested
 |-----|-----|-----|-----|
 | 1 | -18.41853 | -25.41487 | -11.4222 |
 
-Using the obesity mean 30.08%, we determine that this healthy population is no more than 18.66% obese but no less than 4.67%.
+Using the obesity mean 30.08%, we determine that this healthy population is no more than 18.66% obese but no less than 4.67%. Therefore, by testing prediciton interval bounds, we can say our multiple linear regression model is accurate and realistic.
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)

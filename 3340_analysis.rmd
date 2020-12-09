@@ -1,7 +1,7 @@
 ---
 title: "3340_Project_Analysis"
 author: "Jacob, Chris, Cali"
-date: "06/12/2020"
+date: "09/12/2020"
 output: html_document
 ---
 
@@ -47,10 +47,17 @@ summary(lm1.2)
 #summary(lm12)
 ```
 
-```{r message=FALSE, warning=FALSE}
+```{r, message=FALSE}
 attach(df)
 plot(x1,y, xlab = "Less than one fruit per day (Normalized, μ = 40.35%)", ylab = "Rate of obesity (Normalized, μ = 30.08%)")
-abline(lm(y ~ x1))
+abline(lm(y ~ x2))
+mylabel = bquote(italic(R)^2 == .(format(0.4112)))
+text(x = 17, y = -12.5, labels = mylabel)
+```
+
+```{r, message=FALSE}
 plot(x2,y, xlab = "Less than one vegetable per day (Normalized, μ = 24.18%)", ylab = "Rate of obesity (Normalized, μ = 30.08%)")
 abline(lm(y ~ x2))
+mylabel = bquote(italic(R)^2 == .(format(0.3616)))
+text(x = 29.5, y = -12.5, labels = mylabel)
 ```

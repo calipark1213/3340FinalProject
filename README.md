@@ -66,8 +66,10 @@ Considering that our multiple linear model is the most important for further ana
 | β<sub>1</sub> | 0.3180 |
 | β<sub>2</sub> | 0.2311 |
 
+We get the same values from doing the linear model.
+
 Another important question to ask is, does the multiple linear model predict new data accurately? We tested this idea using prediction intervals by looking at a potential sample where no individuals in the sample get their daily intake of fruits and vegetables. The `predict` command in R was used to get: <br/>
-#### Table 1.2 - 95% Prediction Interval
+#### Table 1.3 - 95% Prediction Interval
 || fit | lwr | upr |
 |-----|-----|-----|-----|
 | 1 | 36.4907 | 29.20862 | 43.77278 |
@@ -75,7 +77,7 @@ Another important question to ask is, does the multiple linear model predict new
 Using the best fit shows that this population would be 36.4907% above the mean obesity, so an estimated 66.57% of all individuals in this sample would be obese. The upper bound of this interval was 73.85%. Comparing this interval back to our original data, it appears to predict the sample well. However, in the real life setting, it may be difficult to find a sample where all the individuals would not eat their fruits and vegetables.  No prediction goes over 100%.
 
 To ensure the prediction interval stays within a realistic range, we also tested for a sample population where everyone has at least a fruit and vegetable daily.
-#### Table 1.3 - 95% Prediction Interval
+#### Table 1.4 - 95% Prediction Interval
 || fit | lwr | upr |
 |-----|-----|-----|-----|
 | 1 | -18.41853 | -25.41487 | -11.4222 |
@@ -99,12 +101,12 @@ Looking at the residuals VS fitted plot of lm(1.2), there is a slight evidence o
 
 
 We performed a robust statistical analysis on all the variables (fruits, vegetables, and the interaction of the two) to also test if there are any major outliers or unequal variance in the data. If you look at the coefficients of the slope in both the original linear model and the robust linear model, they are essentially the same value. The intercepts appear to be off but that is a result of normalizing the data by subtracting the mean from their values. Based on the results of the robust statistics, it is fair to say that there are no significant outliers in our dataset that could cause false observations. However, the β coefficients do increase when using a Robust lienar model, so one could assume that there are some more obesity samples that are minorly influencing the data, hence the slight increase in slope.
-#### Table 1.x - Linear and Robust Coefficients
+#### Table 1.5 - Linear and Robust Coefficients
 | Model | Intercept | x<sub>1</sub> | x<sub>2</sub> |
 |-----|-----|-----|-----|
-| y ~ x<sub>1</sub> lm | ~0 | 0.4582 | |
+| y ~ x<sub>1</sub> lm | ~ 0 | 0.4582 | |
 | y ~ x<sub>1</sub> rlm | -0.0057 | 0.4852 | |
-| y ~ x<sub>2</sub> lm | ~0 | | 0.3904 |
+| y ~ x<sub>2</sub> lm | ~ 0 | | 0.3904 |
 | y ~ x<sub>2</sub> rlm | 0.0412 | | 0.4021 |
 | y ~ x<sub>1</sub> + x<sub>2</sub> lm | ~0 | 0.3180 | 0.2311 |
 | y ~ x<sub>1</sub> + x<sub>2</sub> rlm | 0.0878 | 0.3195 | 0.2381 |

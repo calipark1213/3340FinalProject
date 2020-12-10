@@ -188,7 +188,7 @@ Lastly, we performed another regression technique called robust statistical anal
 | y ~ x<sub>1</sub> + x<sub>2</sub> rlm | 0.0878 | 0.3195 | 0.2381 |
 
 
-## Conclusion (must contain a concise discussion of what has been learned from the analysis)
+## Conclusion
 In conclusion, our full regression analysis of the CDC data allowed us to discover the relationship between the percentage of adults aged 18 years and older who have obesity and percentage of less than one fruit/vegetable consumed daily. Using our formatted data, we determined that our predictor variables were linear. Although not complex, our simple linear regression analysis showed various findings. We estimate that a 1% increase in the rate of those who eat less than one fruit a day in a sample population leads to a 0.4582% increase in the rate of obesity, and that a 1% increase in the rate of those who eat less than one vegetable a day leads to a 0.3904% increase in the rate of obesity. Our multiple linear regression analysis seemed to be the most important for further analysis, with a multiple R^2 value of 0.4983. All three null hypotheses were rejected at α = 0.95 because the corresponding p-values were near zero.
 
 In addition, using residual analysis we were able to verify the model assumptions and validate our model. We plotted the residuals using the type “R-Student Residuals” and concluded that our data follows the 4 assumptions made in the methods section. 

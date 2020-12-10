@@ -213,9 +213,3 @@ data_prime.csv - Dataset formatted using PrimeDataSetup and some Excel work </br
 [4] U.S. Department of Health and Human Services and U.S. Department of Agriculture. (December 2015). 2015–2020 Dietary Guidelines for Americans _8th Edition_. https://health.gov/our-work/food-nutrition/2015-2020-dietary-guidelines/guidelines/ <br/>
 [5] Montgomery, D., Peck, E., &amp; Vining, G. (2012). Introduction to Linear Regression Analysis, 5th Edition. John Wiley & Sons.
 
-
-
-https://github.com/github/hub/issues/new?assignees=&labels=bug&template=bug_report.md&title=
-https://web.stanford.edu/~kjytay/courses/stats32-aut2019/Session%208/Markdown%20Cheatsheet.pdf
-
-

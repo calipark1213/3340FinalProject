@@ -61,7 +61,7 @@ Figures 1.1a and 1.2a show scatterplots of our end result data. X axis for 1.1a 
 #### Figure 1.2a: Less than one vegetable per day VS Rate of obesity (n = 918) <br/>
 ![Less than one veggie VS obesity](https://user-images.githubusercontent.com/74206318/101719062-f07ad380-3a78-11eb-825c-9f6179616bbe.png)
 
-## Methods (must contain a complete description of all analysis tools used)
+## Methods
 _Note that terminology and equations in this section are from the textbook [5]_ <br/>
 We will be defining the consumption of fruit and vegetables as our two main predictor variables, x<sub>1</sub> and x<sub>2</sub> respectively (i.e. they will be our independent variables). The percentage of adults aged 18 years and older who have obesity will thus be our response variable (i.e. our dependent variable). This project strives to perform a full regression analysis, to determine if a relationship exists between our predictor variables and the response. Before we fit the model, we begin by normalizing the predictor variables, to allow easier interpretation and to reduce variability. The normalization is achieved by taking the mean, and subsequently subtracting it from each point. 
 

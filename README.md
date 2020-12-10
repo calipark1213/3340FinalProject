@@ -33,7 +33,7 @@ The techniques of regression analysis in this paper includes the following _(Fou
 9. ANOVA. <br/>
 10. Modern regression approaches. <br/>
 
-## Data Description (must contain data visualizations that are properly labelled and explained)
+## Data Description
 Our original data published by the CDC is composed of different types of aggregated data relating to weight, diet, and exercise in the United States in 2011 to 1016. Data is given as a percentage of the sampled population that fit in the asked question. The following questions are answered throughout the dataset [3]:<br/>
 •	Percent of adults aged 18 years and older who have obesity <br/>
 •	Percent of adults aged 18 years and older who have an overweight classification <br/>

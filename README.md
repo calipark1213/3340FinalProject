@@ -108,7 +108,7 @@ Looking at figure 1.3, the plot suggests a slight evidence of a non-linear relat
 | x<sub>2</sub> | -1.1900 | 0.2343431 |
 | Tukey test | -3.5719 | 0.0003545 |
 
-| x<sub>1</sub> | x<sub>2</sub>) |
+| x<sub>1</sub> | x<sub>2</sub> |
 |--------|-------|
 | 1.436569 | 1.436569 |
 

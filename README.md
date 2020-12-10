@@ -22,7 +22,7 @@ Here we strive to answer the following question using regression analysis: Is th
 | $75,000 or greater per year  | 6 |  
 
 The techniques of regression analysis in this paper includes the following _(Found in Math/Stat3340 Syllabus)_: <br/>
-1. Perform least-squares estimation, hypothesis testing and interval estimation for simple linear regression models by hand and using R. <br/>
+1. Perform least-squares estimation, hypothesis testing and interval estimation for simple linear regression models using R. <br/>
 2. Perform least-squares estimation, hypothesis testing and interval estimation for multiple linear regression models using R. <br/>
 3. Perform estimation by maximum likelihood and predict new observations using R. <br/>
 4. Check model adequacy via residual analysis, detection and treatment of outliers and tests for lack of fit. <br/>

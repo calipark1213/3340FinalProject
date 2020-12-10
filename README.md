@@ -128,9 +128,7 @@ We performed a robust statistical analysis on all the variables (fruits, vegetab
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)
-We have filtered the CDC data set to better fit our research question. This included removing non-existent data points as well as irrelavant data columns. The remaining 6 columns can be found in the _data_prime.csv tab_.
-After using the library dplyr on R to filter our irrelevant data points, we then exported the file to a csv and formatted our final _data_prime.csv_. To have better data to read visually, we have created columns for fruit/vegetable consumption and moved the corresponding cell value to the new columns. In addition, we have made  **???????**
-
+3340_analysis.rmd
 
 ## Rerefences
 [1] Center for Disease Control and Prevention. (2020, September 17).  About Adult BMI. _cdc.gov_ https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html  <br/>

@@ -62,7 +62,9 @@ Figures 1.1a and 1.2a show scatterplots of our end result data. X axis for 1.1a 
 ![Less than one veggie VS obesity](https://user-images.githubusercontent.com/74206318/101719062-f07ad380-3a78-11eb-825c-9f6179616bbe.png)
 
 ## Methods (must contain a complete description of all analysis tools used)
+_Note that terminology and equations in this section are from the textbook [5]_ <br/>
 We will be defining the consumption of fruit and vegetables as our two main predictor variables, x<sub>1</sub> and x<sub>2</sub> respectively (i.e. they will be our independent variables). The percentage of adults aged 18 years and older who have obesity will thus be our response variable (i.e. our dependent variable). This project strives to perform a full regression analysis, to determine if a relationship exists between our predictor variables and the response. Before we fit the model, we begin by normalizing the predictor variables, to allow easier interpretation and to reduce variability. The normalization is achieved by taking the mean, and subsequently subtracting it from each point. 
+
 To begin, we started off with the `lm` command which will produce two simple linear models between obesity rates (y), and the number of people who consume less than one fruit per day (x<sub>1</sub>) and less than on vegetable a day (x<sub>2</sub>).  Simple linear regression fits a straight line to our data, which we can use to determine the relationship between our predictor and response variable. The model is in the form y=B<sub>0</sub>  + B<sub>1</sub>x + error, where the e ~ N(0,σ<sup>2</sup>). In our case, we will be looking at two simple linear models; _y~x<sub>1</sub>_ and _y~x<sub>2</sub>_. Calculating the intercept and the slope (β<sub>0</sub> and β<sub>1</sub>) uses calculus to take the partial derivative of S with respect to β<sub>0</sub> and β<sub>1</sub> and can be solved for both by setting the partial derivatives equal to 0.  The intercept is the value of y when x=0, and the slope is the change in y as x increases by 1 unit. The `lm` command will provide the model’s coefficient for us, and we can obtain an in-depth statistical summary using `summary(lm)`. 
 
 Next, we examine multiple linear regression using our dataset. Again, we will use R’s `lm` command, but this time, we will set our syntax to y~x<sub>1</sub>+x<sub>2</sub>. The basic form of multiple linear regression is y=β<sub>0</sub>+β<sub>1</sub>x<sub>1</sub>+β<sub>2</sub>x<sub>2</sub>+…+β<sub>n</sub>x<sub>n</sub>. Similar to simple linear regression, we can look at the statistical summary using the `summary` command, and draw conclusions. Since we have multiple variables in the equation, we can also see if there is any interaction between these variables by multiplying two or more of them together. This will add a third variable called the interaction (x<sub>1</sub>x<sub>2</sub>) for instance. The change in the multiple _R<sup>2</sup>_ value is very small using this model, so the gerneal multiple linear model is used instead.
@@ -72,7 +74,6 @@ To draw conclusions on the data, it is important that we perform hypothesis test
 2.	Assuming the null hypothesis is true, the next step is to calculate the test statistic (t, z or F depending on how many degrees of freedom there are). <br/>
 3.	Determine the p-value <br/>
 4.	State conclusion (reject or support the null hypothesis) <br/>
-
 Typically, in regression, we test the significance of the intercept and the slope to determine if there exists a relationship. This is done by setting H<sub>0</sub>=β<sub>i</sub> = 0 and H<sub>a</sub>= β<sub>i</sub> ≠ 0, at α = 0.95
 
 It is also important that we check the model’s adequacy by detecting outliers within the data. This is accomplished by plotting the residuals in R and scatterplots and see the deviation between the data and line of best fit. We can then also measure the variability in the response variables. We have the following residual plots in our obesity data: <br/>
@@ -82,6 +83,9 @@ It is also important that we check the model’s adequacy by detecting outliers 
 
 This will all help us interpret a line of best fit, and see how far off the data is deviated from the line of best fit. <br/>
 
+In some cases, if the variability becomes too high, and there does not appear to be a linear relationship, we can use a method called variance stabilizing. We essentially transform the model into a different relationship of the data. The most common types are ln(y), and √y. We do not need to do this in our case because if you observe figures 1.1a and 1.2a, the data follows a linear pattern (with only a couple outliers, however, not sufficient to raise concerns) and there is no need to transform the data. 
+
+In combination with the residual techniques, we can use the hat matrix (H) to help us identify any observations that are influential. Larger residuals that exist among the data are most likely going to be influential. We can identify these through the diagonals of the hat matrix (H). Now we must test for any signs of multicollinearity by calculating the variance inflation factor. This is accomplished through R’s built-in `car` library. This enables us to use the `VIF` command to compute the variance inflation factor. Large variance inflation factors ≥ 10 raises concerns of multicollinearity. Fortunately for us, our VIF value was 1.436569 so there is no evidence of multicollinearity in our data.
 
 
 ## Results
@@ -104,6 +108,7 @@ From the scatterplots, we see that there appears to be a relationship between ea
 When performing multiple linear regression, we get the model _y_ = 0.318x<sub>1</sub> + 0.2311x<sub>2</sub> - 6.783E-16. This also produced a multiple _R<sup>2</sup>_ value of 0.4983, the strongest correlation yet. Similar to the simple linear regressions, if we test an alternate hypothesis that not all β<sub>i</sub> = 0, we can reject the null hypothesis of β<sub>1</sub> = β<sub>2</sub> = 0 at α = 0.95 because our p-value is near zero as determined from the linear regression. 
 
 Considering that our multiple linear model is the most important for further analysis, and has the largest _R<sup>2</sup>_, we double checked the model by transforming our data into matricies and performing least squares estimations, which resulted in the following matrix:
+
 #### Table 1.2 - Least Squares Estimation Matrix
 | Coefficient | Value |
 |---|---|
@@ -149,9 +154,7 @@ Looking at figure 1.3, the plot suggests a slight evidence of a non-linear relat
 
 To determine if multicollinearity is present in our data, we used the car library to find our variance inflation factors (VIF). This is important since a high VIF value means that there is evidence of multicollinearity in our data. Fortunately for our dataset, our VIF value is 1.436569, which shows weak evidence of multicollinearity between the predictor variables in this case. That is, it appears that hardly any variance inflation exists in our data. 
 
-
-Since we have assesed the model and determined that the residuals follow the model assumptions, we do not need to perform transformations and weighting to correct model inadequacies. 
-
+Since we have assesed the model and determined that the residuals follow the model assumptions, we do not need to perform transformations and weighting to correct model inadequacies. We verify that our coefficients are stable, and its signs and magnitudes are also reasonable. There is no concernes of multicollinearity, and the predicted responses are within the range of those observed. This all concludes that we had a good experimental design, since our regression coefficients are almost uncorrelated, and the regressor variables are not being missed and are within the appropriate range. We can ignore the few observations that are outliers since they seem to have an insignificant effect in our data. 
 
 Now that we have made sure that these conditions are met, we can now make a prediction. The `predict` command in R was used to get: <br/>
 #### Table 1.3 - 95% Prediction Interval
@@ -169,7 +172,8 @@ To ensure the prediction interval stays within a realistic range, we also tested
 
 Using the obesity mean 30.08%, we determine that this healthy population is no more than 18.66% obese but no less than 4.67%. Therefore, by testing prediciton interval bounds, we can say our multiple linear regression model is accurate and realistic.
 
-We performed a robust statistical analysis on all the variables (fruits, vegetables, and the interaction of the two) to also test if there are any major outliers or unequal variance in the data. If you look at the coefficients of the slope in both the original linear model and the robust linear model, they are essentially the same value. The intercepts appear to be off but that is a result of normalizing the data by subtracting the mean from their values. Based on the results of the robust statistics, it is fair to say that there are no significant outliers in our dataset that could cause false observations. However, the β coefficients do increase when using a Robust lienar model, so one could assume that there are some more obesity samples that are minorly influencing the data, hence the slight increase in slope.
+Lastly, we performed another regression technique called robust statistical analysis on all the variables (fruits, vegetables, and the interaction of the two) to also test if there are any major outliers or unequal variance in the data. If you look at the coefficients of the slope in both the original linear model and the robust linear model, they are essentially the same value. The intercepts appear to be off but that is a result of normalizing the data by subtracting the mean from their values. Based on the results of the robust statistics, it is fair to say that there are no significant outliers in our dataset that could cause false observations. However, the β coefficients do increase when using a Robust lienar model, so one could assume that there are some more obesity samples that are minorly influencing the data, hence the slight increase in slope.
+
 #### Table 1.6 - Linear and Robust Coefficients
 | Model | Intercept | x<sub>1</sub> | x<sub>2</sub> |
 |-----|-----|-----|-----|
@@ -197,6 +201,7 @@ data_prime.csv - Dataset formatted using PrimeDataSetup and some Excel work </br
 [3] Suzanne. (2018, March 23). CDC Data: Nutrition, Physical Activity, & Obesity. _kaggle.com_ https://www.kaggle.com/spittman1248/cdc-data-nutrition-physical-activity-obesity  <br/>
 [4] U.S. Department of Health and Human Services and U.S. Department of Agriculture. (December 2015). 2015–2020 Dietary Guidelines for Americans _8th Edition_. https://health.gov/our-work/food-nutrition/2015-2020-dietary-guidelines/guidelines/ <br/>
 [5] Montgomery, D., Peck, E., &amp; Vining, G. (2012). Introduction to Linear Regression Analysis, 5th Edition. John Wiley & Sons.
+
 
 
 https://github.com/github/hub/issues/new?assignees=&labels=bug&template=bug_report.md&title=

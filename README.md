@@ -183,7 +183,7 @@ We performed a robust statistical analysis on all the variables (fruits, vegetab
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)
-**ALL FILES ARE FOUND AT TOP OF GITHUB PAGE**
+**ALL FILES ARE FOUND AT TOP OF GITHUB PAGE**</br>
 3340_PrimeDataSetup.Rmd - R code used to format the original dataset </br>
 3340_analysis.html - HTML copy of our alaysis Rmd</br>
 3340_analysis.rmd - R code used for results</br>

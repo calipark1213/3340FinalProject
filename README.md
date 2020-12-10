@@ -33,6 +33,25 @@ The techniques of regression analysis in this paper includes the following _(Fou
 10. Modern regression approaches. <br/>
 
 ## Data Description (must contain data visualizations that are properly labelled and explained)
+Our original data published by the CDC is composed of different types of aggregated data relating to weight, diet, and exercise in the United States in 2011 to 1016. Data is given as a percentage of the sampled population that fit in the asked question. The following questions are answered throughout the dataset:
+•	Percent of adults aged 18 years and older who have obesity
+•	Percent of adults aged 18 years and older who have an overweight classification
+•	Percent of adults who report consuming fruit less than one time daily
+•	Percent of adults who report consuming vegetables less than one time daily
+•	Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
+•	Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week
+•	Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
+•	Percent of adults who engage in muscle-strengthening activities on 2 or more days a week
+•	Percent of adults who engage in no leisure-time physical activity
+
+
+The data is also presented in several different ways for every group sampled. Data is grouped by gender, education, age, income, and race. There are also several columns of irrelevant identifications which are removed later on. 
+
+We decided to work with the percentage of those who eat fruits less than once a day and the percentage of those who eat vegetables less than once a day as our predictor variables. Our response variable is the rate of obesity. To make sure there is no overlapping data, we took the income grouping from every section as our data of choice. It had six different ranges, allowing us to get a higher volume of data entries.
+
+A new data entry was added to differentiate our dataset from other groups using the same one. First, it is important to note that there is always a gap in the total sample size for the income grouping due to people not answering questions about their income. In the 2012 Alabama data (for one particular city), there is a 1255 gap in sample size total compared to the sample size of those who answered about income. There is also no Asian demographic in this particular sample. We introduced our new data point by taking the 1255 gap and introducing the same amount of Asian people into the area. We pooled them into the $50,000 - $74,999 income range for simplicity.
+
+To get the dataset to the optimal format for analysis, we began by removing any columns unrelated to our research. This including the aforementioned identification entries, and columns of the other groupings (age and gender for example). Then, every row with data irrelevant to our research question was removed (e.g., exercise data). Then, in Excel, we created two new rows for fruits and vegetables and matched the data for every sample size. This resulted in every row having obesity, fruit consumption, and vegetable consumption. At this point, the data could be used for regression.
 
 
 ## Methods (must contain a complete description of all analysis tools used)

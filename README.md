@@ -42,11 +42,11 @@ We will be defining the consumption of fruit and vegetables as our two main pred
 ## Results (all figures should be properly labelled and discussed)
 We begin with scatterplots to get a general visualization of the data we are working with. 
 
-#### Figure 1.1: Less than one fruit per day VS Rate of obesity (Normalized) <br/>
+#### Figure 1.1: Less than one fruit per day VS Rate of obesity (Normalized) 
 ![Less than one fruit VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101662054-65212400-3a1f-11eb-95ae-ffc1606bf1cb.png) <br/>
 **_y_ = 0.4582x<sub>1</sub> - 1.109E-15**  
 
-#### Figure 1.2: Less than one vegetable per day VS Rate of obesity (Normalized) <br/>
+#### Figure 1.2: Less than one vegetable per day VS Rate of obesity (Normalized) 
 ![Less than one veggie VS obesity (normalized)](https://user-images.githubusercontent.com/74206318/101662056-65b9ba80-3a1f-11eb-99a6-7d45f7dbe864.png) <br/>
 **_y_ = 0.3904x<sub>2</sub> - 4.421E-17**  
 
@@ -84,28 +84,30 @@ To ensure the prediction interval stays within a realistic range, we also tested
 
 Using the obesity mean 30.08%, we determine that this healthy population is no more than 18.66% obese but no less than 4.67%. Therefore, by testing prediciton interval bounds, we can say our multiple linear regression model is accurate and realistic.
 
-Residual analysis also plays a key role in determine the strength of our model.
-#### Figure 1.3: Residuals vs Fitted Plot <br/>
-![Residuals VS Fitted mlr](https://user-images.githubusercontent.com/74206318/101710271-84dc3a80-3a67-11eb-9a1c-775dae92ee8a.png) <br/>
+Residual analysis also plays a key role in determine the strength of our model.  <br/>
+ 
+#### Figure 1.3: Residuals vs Fitted Plot 
+![Residuals VS Fitted mlr](https://user-images.githubusercontent.com/74206318/101710271-84dc3a80-3a67-11eb-9a1c-775dae92ee8a.png)
 
-#### Figure 1.4: Normal Q-Q Plot <br/>
+#### Figure 1.4: Normal Q-Q Plot 
 ![Normal Q-Q mlr](https://user-images.githubusercontent.com/74206318/101710277-860d6780-3a67-11eb-8373-d11434163b02.png)
 
-#### Figure 1.5: Residuals vs Leverage Plot <br/>
+#### Figure 1.5: Residuals vs Leverage Plot 
 ![Residuals VS Leverage mlr](https://user-images.githubusercontent.com/74206318/101710280-873e9480-3a67-11eb-8dd1-5a6d7c20903e.png)
 
-#### Figure 1.6: Scale-Location Plot <br/r>
+#### Figure 1.6: Scale-Location Plot 
 ![Scale-Location mlr](https://user-images.githubusercontent.com/74206318/101710283-886fc180-3a67-11eb-8255-d30f137a7e11.png)
 
 Looking at figure 1.3, the plot suggests a slight evidence of a non-linear relationship. Next, looking at figure 1.4, all the residuals seem to follow a straight line well. There are 3 data points that are outliers which are 162, 202, and 205 but they seem to follow the general trend well enough to be disregarded. When looking at the figure 1.5, the residuals seem to be randomly spread apart. Again there are the same outliers but they still follow the general trend well enough to be disregarded. The last plot to analyze is shown in figure 1.6. Many data points appear to follow the cook's distance lines, however, some do not, such as observations 197, 269 and 700. Removing entries 162, 202, 205 or 197, 269, 700 (or both sets) only affect _R<sup>2</sup>_ up to 0.01, giving an _R<sup>2</sup>_ value of 0.5082.
 
-#### Table 1.5 Variance Inflation Factor Output (Multiple Linear Regression)
-| | Test stat | Pr(>|Test stat|) |
+#### Table 1.5 Variance Inflation Factor Output (Multiple Linear Regression) <br/>
+`predict(lm1.2)` output <br/>
+|| Test stat | Pr(><td>Test stat<td>|
 |--------|-------|------|
 | x<sub>1</sub> | -0.4044 |  0.6860444 |
 | x<sub>2</sub> | -1.1900 | 0.2343431 |
 | Tukey test | -3.5719 | 0.0003545 |
-
+<br/>
 | x<sub>1</sub> | x<sub>2</sub>) |
 |--------|-------|
 | 1.436569 | 1.436569 |

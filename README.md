@@ -151,7 +151,7 @@ Looking at figure 1.3, the plot suggests a slight evidence of a non-linear relat
 To determine if multicollinearity is present in our data, we used the car library to find our variance inflation factors (VIF). This is important since a high VIF value means that there is evidence of multicollinearity in our data. Fortunately for our dataset, our VIF value is 1.436569, which shows weak evidence of multicollinearity between the predictor variables in this case. That is, it appears that hardly any variance inflation exists in our data. 
 
 
-Since we have assesed the model and determined that the residuals follow the model assumptions, we do not need to perform variance stabilizing transformations. 
+Since we have assesed the model and determined that the residuals follow the model assumptions, we do not need to perform transformations and weighting to correct model inadequacies. 
 
 
 Now that we have made sure that these conditions are met, we can now make a prediction. The `predict` command in R was used to get: <br/>

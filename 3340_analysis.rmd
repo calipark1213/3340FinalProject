@@ -74,10 +74,6 @@ predict.lm(lm1.2,newdata=obeEst,interval="prediction")
 ```
 
 ```{r}
-plot(lm1.2)
-```
-
-```{r}
 dfedit <- df[-c(197,269,700),]
 dfedit2 <- df[-c(162,202,205),]
 dfedit3 <- df[-c(197,269,700,162,202,205)]

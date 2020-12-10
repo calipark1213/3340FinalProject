@@ -191,6 +191,11 @@ Lastly, we performed another regression technique called robust statistical anal
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 In conclusion, our full regression analysis of the CDC data allowed us to discover the relationship between the percentage of adults aged 18 years and older who have obesity and percentage of less than one fruit/vegetable consumed daily. Using our formatted data, we determined that our predictor variables were linear. Although not complex, our simple linear regression analysis showed various findings. We estimate that a 1% increase in the rate of those who eat less than one fruit a day in a sample population leads to a 0.4582% increase in the rate of obesity, and that a 1% increase in the rate of those who eat less than one vegetable a day leads to a 0.3904% increase in the rate of obesity. Our multiple linear regression analysis seemed to be the most important for further analysis, with a multiple R^2 value of 0.4983. All three null hypotheses were rejected at α = 0.95 because the corresponding p-values were near zero.
 
+In addition, using residual analysis we were able to verify the model assumptions and validate our model. We plotted the residuals using the type “R-Student Residuals” and concluded that our data follows the 4 assumptions made in the methods section. 
+
+We would like to discuss that our data could be improved in several ways. First, we could have introduced more variables such as exercise time into our model. As indicated in the introduction, although BMI correlates with amount of body fat, the actual amount of body fat may be different from individual depending on various factors such as genetics and daily exercise. Secondly, we did not address the potential of having a type I or type II errors. Although healthy eating and the rate of obesity is related, we may have a type I error because fruits and vegetables may not be linearly associated as we concluded. This is important to note since there are a lot more factors that contribute to obesity. 
+
+
 ## Appendix
 ***ALL FILES ARE FOUND AT TOP OF GITHUB PAGE*** </br>
 3340_PrimeDataSetup.Rmd - R code used to format the original dataset </br>

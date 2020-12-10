@@ -191,7 +191,7 @@ Lastly, we performed another regression technique called robust statistical anal
 
 
 ## Conclusion
-In conclusion, our full regression analysis of the CDC data allowed us to discover the relationship between the percentage of adults aged 18 years and older who have obesity and percentage of less than one fruit/vegetable consumed daily. Using our formatted data, we determined that our predictor variables were linear. Although not complex, our simple linear regression analysis showed various findings. We estimate that a 1% increase in the rate of those who eat less than one fruit a day in a sample population leads to a 0.4582% increase in the rate of obesity, and that a 1% increase in the rate of those who eat less than one vegetable a day leads to a 0.3904% increase in the rate of obesity. Our multiple linear regression analysis seemed to be the most important for further analysis, with a multiple R^2 value of 0.4983. All three null hypotheses were rejected at α = 0.95 because the corresponding p-values were near zero.
+In conclusion, our full regression analysis of the CDC data allowed us to discover the relationship between the percentage of adults aged 18 years and older who have obesity and percentage of less than one fruit/vegetable consumed daily. Using our formatted data, we determined that our predictor variables were linear. Although not complex, our simple linear regression analysis showed various findings. We estimate that a 1% increase in the rate of those who eat less than one fruit a day in a sample population leads to a 0.4582% increase in the rate of obesity, and that a 1% increase in the rate of those who eat less than one vegetable a day leads to a 0.3904% increase in the rate of obesity. Our multiple linear regression analysis seemed to be the most important for further analysis, with a multiple R<sup>2</sup> value of 0.4983. All three null hypotheses were rejected at α = 0.95 because the corresponding p-values were near zero.
 
 In addition, using residual analysis we were able to verify the model assumptions and validate our model. We plotted the residuals using the type “R-Student Residuals” and concluded that our data follows the 4 assumptions made in the methods section. 
 
@@ -202,11 +202,12 @@ This concludes our full regression analysis.
 
 ## Appendix
 ***ALL FILES ARE FOUND AT TOP OF GITHUB PAGE*** </br>
-3340_PrimeDataSetup.Rmd - R code used to format the original dataset </br>
+3340_PrimeDataSetup.Rmd - R markdown code used to format the original dataset </br>
 3340_analysis.html - HTML copy of our analysis Rmd </br>
-3340_analysis.rmd - R code used for results </br>
+3340_analysis.rmd - R Markdown code used for results </br>
 README.md - Primary document containing details about our project </br>
 data_prime.csv - Dataset formatted using PrimeDataSetup and some Excel work </br>
+_Please download data_prime.csv in order run the 3340_analysis.rmd. Thank you!_ 
 
 ## Rerefences
 [1] Center for Disease Control and Prevention. (2020, September 17).  About Adult BMI. _cdc.gov_ https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html  <br/>

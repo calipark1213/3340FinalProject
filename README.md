@@ -183,7 +183,12 @@ We performed a robust statistical analysis on all the variables (fruits, vegetab
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)
+
+3340_PrimeDataSetup.Rmd
+3340_analysis.html
 3340_analysis.rmd
+README.md
+data_prime.csv
 
 ## Rerefences
 [1] Center for Disease Control and Prevention. (2020, September 17).  About Adult BMI. _cdc.gov_ https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html  <br/>

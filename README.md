@@ -34,15 +34,15 @@ The techniques of regression analysis in this paper includes the following _(Fou
 
 ## Data Description (must contain data visualizations that are properly labelled and explained)
 Our original data published by the CDC is composed of different types of aggregated data relating to weight, diet, and exercise in the United States in 2011 to 1016. Data is given as a percentage of the sampled population that fit in the asked question. The following questions are answered throughout the dataset:
-•	Percent of adults aged 18 years and older who have obesity
-•	Percent of adults aged 18 years and older who have an overweight classification
-•	Percent of adults who report consuming fruit less than one time daily
-•	Percent of adults who report consuming vegetables less than one time daily
-•	Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
-•	Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week
-•	Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)
-•	Percent of adults who engage in muscle-strengthening activities on 2 or more days a week
-•	Percent of adults who engage in no leisure-time physical activity
+•	Percent of adults aged 18 years and older who have obesity<br/>
+•	Percent of adults aged 18 years and older who have an overweight classification<br/>
+•	Percent of adults who report consuming fruit less than one time daily<br/>
+•	Percent of adults who report consuming vegetables less than one time daily<br/>
+•	Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)<br/>
+•	Percent of adults who achieve at least 150 minutes a week of moderate-intensity aerobic physical activity or 75 minutes a week of vigorous-intensity aerobic physical activity and engage in muscle-strengthening activities on 2 or more days a week<br/>
+•	Percent of adults who achieve at least 300 minutes a week of moderate-intensity aerobic physical activity or 150 minutes a week of vigorous-intensity aerobic activity (or an equivalent combination)<br/>
+•	Percent of adults who engage in muscle-strengthening activities on 2 or more days a week<br/>
+•	Percent of adults who engage in no leisure-time physical activity<br/>
 
 
 The data is also presented in several different ways for every group sampled. Data is grouped by gender, education, age, income, and race. There are also several columns of irrelevant identifications which are removed later on. 

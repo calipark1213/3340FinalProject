@@ -86,19 +86,31 @@ Using the obesity mean 30.08%, we determine that this healthy population is no m
 
 Residual analysis also plays a key role in determine the strength of our model.
 #### Figure 1.3: Residuals vs Fitted Plot <br/>
-![Residuals vs Fitted Plot](https://user-images.githubusercontent.com/74836346/101684987-99a3d880-3a3d-11eb-8b4c-c6b187f08365.png) <br/>
+![Residuals VS Fitted mlr](https://user-images.githubusercontent.com/74206318/101710271-84dc3a80-3a67-11eb-9a1c-775dae92ee8a.png) <br/>
 
 #### Figure 1.4: Normal Q-Q Plot <br/>
-![Normal Q-Q Plot](https://user-images.githubusercontent.com/74836346/101686427-6cf0c080-3a3f-11eb-9a7b-90e821b9db3e.png) <br/>
+![Normal Q-Q mlr](https://user-images.githubusercontent.com/74206318/101710277-860d6780-3a67-11eb-8373-d11434163b02.png)
 
 #### Figure 1.5: Residuals vs Leverage Plot <br/>
-![Residuals vs Leverage Plot](https://user-images.githubusercontent.com/74836346/101686830-f7392480-3a3f-11eb-9878-c4ecabf3d61d.png) <br/>
+![Residuals VS Leverage mlr](https://user-images.githubusercontent.com/74206318/101710280-873e9480-3a67-11eb-8dd1-5a6d7c20903e.png)
 
+#### Figure 1.6: Scale-Location Plot <br/r>
+![Scale-Location mlr](https://user-images.githubusercontent.com/74206318/101710283-886fc180-3a67-11eb-8255-d30f137a7e11.png)
 
+Looking at figure 1.3, the plot suggests a slight evidence of a non-linear relationship. Next, looking at figure 1.4, all the residuals seem to follow a straight line well. There are 3 data points that are outliers which are 162, 202, and 205 but they seem to follow the general trend well enough to be disregarded. When looking at the figure 1.5, the residuals seem to be randomly spread apart. Again there are the same outliers but they still follow the general trend well enough to be disregarded. The last plot to analyze is shown in figure 1.6. Many data points appear to follow the cook's distance lines, however, some do not, such as observations 197, 269 and 700. Removing entries 162, 202, 205 or 197, 269, 700 (or both sets) only affect _R<sup>2</sup>_ up to 0.01, giving an _R<sup>2</sup>_ value of 0.5082.
 
-Looking at the residuals VS fitted plot of lm(1.2), there is a slight evidence of a non-linear relationship. Next, looking at the normal Q-Q plot, all the residuals seem to follow a straight line well. There are 3 data points that are outliers which are 162, 202, and 205 but they seem to follow the general trend well enough to be disregarded. When looking at the Scale-Location plot, the residuals seem to be randomly spread apart. Again there are the same outliers but they still follow the general trend well enough to be disregarded. The last plot to analyze is the Residuals vs Leverage plot. Many data points appear to follow the cook's distance lines, however, some do not, such as observations 197, 269 and 700. Removing entries 162, 202, 205 or 197, 269, 700 (or both sets) only affect _R<sup>2</sup>_ up to 0.01, giving a result of 0.5082.
+#### Table 1.5 Variance Inflation Factor Output (Multiple Linear Regression)
+| | Test stat | Pr(>|Test stat|) |
+|--------|-------|------|
+| x<sub>1</sub> | -0.4044 |  0.6860444 |
+| x<sub>2</sub> | -1.1900 | 0.2343431 |
+| Tukey test | -3.5719 | 0.0003545 |
 
+| x<sub>1</sub> | x<sub>2</sub>) |
+|--------|-------|
+| 1.436569 | 1.436569 |
 
+To determine if multicollinearity is present in our data, we used the car library to find our variance inflation factors (VIF). This is important since a high VIF value means that there is evidence of multicollinearity in our data. Fortunately for our dataset, our VIF value is 1.436569, which shows weak evidence of multicollinearity between the predictor variables in this case. That is, it appears that hardly any variance inflation exists in our data. 
 
 We performed a robust statistical analysis on all the variables (fruits, vegetables, and the interaction of the two) to also test if there are any major outliers or unequal variance in the data. If you look at the coefficients of the slope in both the original linear model and the robust linear model, they are essentially the same value. The intercepts appear to be off but that is a result of normalizing the data by subtracting the mean from their values. Based on the results of the robust statistics, it is fair to say that there are no significant outliers in our dataset that could cause false observations. However, the β coefficients do increase when using a Robust lienar model, so one could assume that there are some more obesity samples that are minorly influencing the data, hence the slight increase in slope.
 #### Table 1.5 - Linear and Robust Coefficients

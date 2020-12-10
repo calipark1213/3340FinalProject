@@ -53,10 +53,12 @@ A new data entry was added to differentiate our dataset from other groups using 
 
 To get the dataset to the optimal format for analysis, we began by removing any columns unrelated to our research. This including the aforementioned identification entries, and columns of the other groupings (age and gender for example). Then, every row with data irrelevant to our research question was removed (e.g., exercise data). Then, in Excel, we created two new rows for fruits and vegetables and matched the data for every sample size. This resulted in every row having a data value for obesity, fruit consumption, and vegetable consumption. Now, the data can be used to perform regression analysis. _3340_PrimeDataSetup.Rmd_ shows the steps on how we set our data upto this point. 
 
-#### Figure 1.1a: Less than one fruit per day VS Rate of obesity <br/>
+Figures 1.1a and 1.2a show scatterplots of our end result data. X axis for 1.1a is the percentage of individuals who did not eat fruit at least once a day in each sampled group. The X axis for 1.2a is the percentage of individuals who did not eat vegetables at least once a day in each sampled group. The Y axis for both are the rates of obesity for each sampled population. These two sets of data will be combined for most of our analysis.
+
+#### Figure 1.1a: Less than one fruit per day VS Rate of obesity (n = 918) <br/>
 ![Less than one fruit VS obesity ](https://user-images.githubusercontent.com/74206318/101719054-ed7fe300-3a78-11eb-977b-a96ad0253088.png)
 
-#### Figure 1.2a: Less than one vegetable per day VS Rate of obesity <br/>
+#### Figure 1.2a: Less than one vegetable per day VS Rate of obesity (n = 918) <br/>
 ![Less than one veggie VS obesity](https://user-images.githubusercontent.com/74206318/101719062-f07ad380-3a78-11eb-825c-9f6179616bbe.png)
 
 ## Methods (must contain a complete description of all analysis tools used)

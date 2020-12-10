@@ -195,6 +195,8 @@ In addition, using residual analysis we were able to verify the model assumption
 
 We would like to discuss that our data could be improved in several ways. First, we could have introduced more variables such as exercise time into our model. As indicated in the introduction, although BMI correlates with amount of body fat, the actual amount of body fat may be different from individual depending on various factors such as genetics and daily exercise. Secondly, we did not address the potential of having a type I or type II errors. Although healthy eating and the rate of obesity is related, we may have a type I error because fruits and vegetables may not be linearly associated as we concluded. This is important to note since there are a lot more factors that contribute to obesity. 
 
+Although our data analysis only had 2 predictor variables, we believe that we were able to learn and analyze a lot of statistical information. We determined that there is a linear relationship between fruit/vegetable consumption and obesity rates. If given the opportunity, it may be interesting to relate how income affects obesity rates. To do so, it would be interesting to look at why people with lower income are more vulnerable to obesity, by raising questions such as “Does having a lower income limit access to healthy food groups such as fruits and vegetables?” 
+This concludes our full regression analysis. 
 
 ## Appendix
 ***ALL FILES ARE FOUND AT TOP OF GITHUB PAGE*** </br>

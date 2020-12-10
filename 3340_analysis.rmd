@@ -120,3 +120,9 @@ plot(lm1.2)
 residualPlots(lm1.2, type = "rstudent")
 vif(lm1.2)
 ```
+
+```{r}
+anova(lm1)
+anova(lm2)
+anova(lm1.2)
+```

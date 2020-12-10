@@ -14,7 +14,6 @@ library(matlib)
 read.csv("C:\\Users\\jacob\\Desktop\\data_prime.csv") -> df
 ```
 
-
 ```{r, message=FALSE}
 mean(df$obesity) -> mObesity
 mean(df$fruit) -> mFruit

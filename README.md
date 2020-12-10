@@ -65,7 +65,24 @@ Figures 1.1a and 1.2a show scatterplots of our end result data. X axis for 1.1a 
 We will be defining the consumption of fruit and vegetables as our two main predictor variables, x<sub>1</sub> and x<sub>2</sub> respectively (i.e. they will be our independent variables). The percentage of adults aged 18 years and older who have obesity will thus be our response variable (i.e. our dependent variable). This project strives to perform a full regression analysis, to determine if a relationship exists between our predictor variables and the response. Before we fit the model, we begin by normalizing the predictor variables, to allow easier interpretation and to reduce variability. The normalization is achieved by taking the mean, and subsequently subtracting it from each point. 
 To begin, we started off with the `lm` command which will produce a linear model between obesity rates (y), and the number of people who consume less than one fruit per day (x<sub>1</sub>) and less than on vegetable a day (x<sub>2</sub>). This will be our main method for analyzing the data, and this input uses the least squares estimation method. This is when we take the actual values and subtract it from the fitted values (evaluated at the given intercept/slope β<sub>0</sub> and β<sub>1</sub>).  We take the sum and square these values (S), take the partial derivatives of β<sub>0</sub> and β<sub>1</sub> respectively, and solve for β<sub>0</sub> and β<sub>1</sub>.  These then generate the least squares estimators β<sub>0</sub> and β<sub>1</sub> that will make S as small as possible.  
 
-A similar procedure is used to observe more than one variable at a time where there is one dependent variable (y) and k predictors.  Least squares estimation was then performed once more by finding the values of β<sub>0</sub>, β<sub>1</sub>,...β<sub>k</sub> that minimize the sum of squares
+Now, if we wanted to examine the relationship between more than one predictor (the independent variable), we would want to perform multiple linear regression with least squares approximation.  Again, we will use R’s “lm” command, but this time include more than one variable (i.e. x1, x2,…xn); therefore, the model would look like y=B0 +B1x1 + B2x2 + … +Bnxn.  Due to the cluster of results, finding the optimal values for Bn will be determined by creating matrices for the predictor variables, the dependent variables, Slopes and intercept, and residuals.   Since we have multiple variables in the equation, we can also see if there is any interaction between these variables by multiplying two or more of them together.  This will add a third variable called the interaction (x1x2) for instance.
+
+To draw conclusions on the data, it is important that we perform hypothesis testing.  Questions like “Is there an interaction between these two variables?” “Does this model best fit the data?” can be answered by performing hypothesis testing.  Here are the steps to perform hypothesis testing:
+
+1.	State the null and alternative hypotheses of interest
+2.	Assuming the null hypothesis is true, the next step is to calculate the test statistic (t, z or F depending on how many degrees of freedom there are).
+3.	Determine the p-value
+4.	State conclusion (reject or support the null hypothesis)
+
+Typically, in regression, we test the significance of the slope (B1) and intercept (B0) to see if there exists a relationship.  This is done by setting B0 and/or B1 equal to 0 as the null hypothesis followed by B0,B1 not equal to 0.
+
+It is also important that we check the model’s adequacy by detecting outliers within the data.  This is accomplished by plotting the residuals in R and scatterplots and see the deviation between the data and line of best fit.  We can then also measure the variability in the response variables.  We have the following residual plots in our obesity data:
+1.	The Normal Probability Plot
+2.	Residuals vs leverage
+3.	Residuals vs fitted values
+
+This will all help us interpret a line of best fit, and see how far off the data is deviated from the line of best fit.
+
 
 ## Results
 We begin with scatterplots to get a general visualization of the data we are working with. 

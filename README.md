@@ -53,7 +53,7 @@ A new data entry was added to differentiate our dataset from other groups using 
 
 To get the dataset to the optimal format for analysis, we began by removing any columns unrelated to our research. This including the aforementioned identification entries, and columns of the other groupings (age and gender for example). Then, every row with data irrelevant to our research question was removed (e.g., exercise data). Then, in Excel, we created two new rows for fruits and vegetables and matched the data for every sample size. This resulted in every row having a data value for obesity, fruit consumption, and vegetable consumption. Now, the data can be used to perform regression analysis. _3340_PrimeDataSetup.Rmd_ shows the steps on how we set our data upto this point. 
 
-Figures 1.1a and 1.2a show scatterplots of our end result data. X axis for 1.1a is the percentage of individuals who did not eat fruit at least once a day in each sampled group. The X axis for 1.2a is the percentage of individuals who did not eat vegetables at least once a day in each sampled group. The Y axis for both are the rates of obesity for each sampled population. These two sets of data will be combined for most of our analysis.
+Figures 1.1a and 1.2a show scatterplots of our end result data. X axis for 1.1a is the percentage of individuals who consumed less than one fruit a day. The X axis for 1.2a is the percentage of individuals who consumed less than one vegetable per day. The Y axis for both represent the rates of obesity for each observation. The two scatterplots were added to visualize how our data is presented. However, the two sets of data will be combined for most of our analysis. 
 
 #### Figure 1.1a: Less than one fruit per day VS Rate of obesity (n = 918) <br/>
 ![Less than one fruit VS obesity ](https://user-images.githubusercontent.com/74206318/101719054-ed7fe300-3a78-11eb-977b-a96ad0253088.png)
@@ -96,7 +96,7 @@ Considering that our multiple linear model is the most important for further ana
 
 We verify that we can achieve the same values when calculating the linear model.
 
-Another important question to ask is, does the multiple linear model predict new data accurately? We tested this idea using prediction intervals by looking at a potential sample where no individuals in the sample get their daily intake of fruits and vegetables. Because we are fitting a linear model, we must make a few assumptions. <br/>
+Another important question to ask is, does the multiple linear model predict new data accurately? We tested this idea using prediction intervals by looking at a potential sample where no individuals in the sample get their daily intake of fruits and vegetables. Because we are fitting a linear model, we must make a few assumptions. [5] <br/>
 1. The relationship between the predictors and the response is linear. <br/>
 2. The error term has zero mean and constant variance. <br/>
 3. The error term has constant variance. (No signs of homoskedasticity) <br/>
@@ -173,7 +173,7 @@ We performed a robust statistical analysis on all the variables (fruits, vegetab
 [2] Center for Disease Control and Prevention. (2020, October 29).  Healthy Food Environments. _cdc.gov_ https://www.cdc.gov/nutrition/healthy-food-environments/index.html  <br/>
 [3] Suzanne. (2018, March 23). CDC Data: Nutrition, Physical Activity, & Obesity. _kaggle.com_ https://www.kaggle.com/spittman1248/cdc-data-nutrition-physical-activity-obesity  <br/>
 [4] U.S. Department of Health and Human Services and U.S. Department of Agriculture. (December 2015). 2015–2020 Dietary Guidelines for Americans _8th Edition_. https://health.gov/our-work/food-nutrition/2015-2020-dietary-guidelines/guidelines/ <br/>
-
+[5] Textbook citation
  
 
 

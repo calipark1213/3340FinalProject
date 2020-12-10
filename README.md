@@ -183,12 +183,12 @@ We performed a robust statistical analysis on all the variables (fruits, vegetab
 
 ## Conclusion (must contain a concise discussion of what has been learned from the analysis)
 ## Appendix (must include all data and R Markdown files for reproducibility)
-
-3340_PrimeDataSetup.Rmd
-3340_analysis.html
-3340_analysis.rmd
-README.md
-data_prime.csv
+**ALL FILES ARE FOUND AT TOP OF GITHUB PAGE**
+3340_PrimeDataSetup.Rmd - R code used to format the original dataset </br>
+3340_analysis.html - HTML copy of our alaysis Rmd</br>
+3340_analysis.rmd - R code used for results</br>
+README.md - Primary document containing details about our project</br>
+data_prime.csv - Dataset formatted using PrimeDataSetup and some Excel work</br>
 
 ## Rerefences
 [1] Center for Disease Control and Prevention. (2020, September 17).  About Adult BMI. _cdc.gov_ https://www.cdc.gov/healthyweight/assessing/bmi/adult_bmi/index.html  <br/>
@@ -201,6 +201,5 @@ data_prime.csv
 
 https://github.com/github/hub/issues/new?assignees=&labels=bug&template=bug_report.md&title=
 https://web.stanford.edu/~kjytay/courses/stats32-aut2019/Session%208/Markdown%20Cheatsheet.pdf
-**Bold** and _Italic_ and `Code` text
 
 

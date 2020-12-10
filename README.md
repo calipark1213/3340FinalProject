@@ -201,7 +201,7 @@ This concludes our full regression analysis.
 ## Appendix
 ***ALL FILES ARE FOUND AT TOP OF GITHUB PAGE*** </br>
 3340_PrimeDataSetup.Rmd - R code used to format the original dataset </br>
-3340_analysis.html - HTML copy of our alaysis Rmd </br>
+3340_analysis.html - HTML copy of our analysis Rmd </br>
 3340_analysis.rmd - R code used for results </br>
 README.md - Primary document containing details about our project </br>
 data_prime.csv - Dataset formatted using PrimeDataSetup and some Excel work </br>

@@ -31,13 +31,12 @@ The techniques of regression analysis in this paper includes the following _(Fou
 8. Select variables and build models using computational techniques. <br/>
 9. ANOVA. <br/>
 10. Modern regression approaches. <br/>
- 
-
 
 ## Data Description (must contain data visualizations that are properly labelled and explained)
 
+
 ## Methods (must contain a complete description of all analysis tools used)
-We will be defining the consumption of fruit and vegetables as our two main predictor variables, x<sub>1</sub> and x<sub>2</sub> respectively, and fit a linear regression model to determine if it has an affect on obesity rates. Before we fit the model, we begin by normalizing the predictor variables by taking the mean and subtracting it from each point to allow easier interpretation and to reduce variability. 
+We will be defining the consumption of fruit and vegetables as our two main predictor variables, x<sub>1</sub> and x<sub>2</sub> respectively (i.e. they will be our independent variables), and fit a linear regression model to determine if it has an affect on obesity rates. Before we fit the model, we begin by normalizing the predictor variables by taking the mean and subtracting it from each point to allow easier interpretation and to reduce variability. 
 
 ## Results (all figures should be properly labelled and discussed)
 We begin with scatterplots to get a general visualization of the data we are working with. 
@@ -114,8 +113,11 @@ Looking at figure 1.3, the plot suggests a slight evidence of a non-linear relat
 
 To determine if multicollinearity is present in our data, we used the car library to find our variance inflation factors (VIF). This is important since a high VIF value means that there is evidence of multicollinearity in our data. Fortunately for our dataset, our VIF value is 1.436569, which shows weak evidence of multicollinearity between the predictor variables in this case. That is, it appears that hardly any variance inflation exists in our data. 
 
+
+Since we have assesed the model and determined that the residuals follow the model assumptions, we do not need to perform variance stabilizing transformations. 
+
 We performed a robust statistical analysis on all the variables (fruits, vegetables, and the interaction of the two) to also test if there are any major outliers or unequal variance in the data. If you look at the coefficients of the slope in both the original linear model and the robust linear model, they are essentially the same value. The intercepts appear to be off but that is a result of normalizing the data by subtracting the mean from their values. Based on the results of the robust statistics, it is fair to say that there are no significant outliers in our dataset that could cause false observations. However, the β coefficients do increase when using a Robust lienar model, so one could assume that there are some more obesity samples that are minorly influencing the data, hence the slight increase in slope.
-#### Table 1.5 - Linear and Robust Coefficients
+#### Table 1.6 - Linear and Robust Coefficients
 | Model | Intercept | x<sub>1</sub> | x<sub>2</sub> |
 |-----|-----|-----|-----|
 | y ~ x<sub>1</sub> lm | ~ 0 | 0.4582 | |

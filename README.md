@@ -118,7 +118,10 @@ Considering that our multiple linear model is the most important for further ana
 
 We verify that we can achieve the same values when calculating the linear model.
 
-Another important question to ask is, does the multiple linear model predict new data accurately? We tested this idea using prediction intervals by looking at a potential sample where no individuals in the sample get their daily intake of fruits and vegetables. Because we are fitting a linear model, we must make a few assumptions. [5] <br/>
+Another important question to ask is, does the multiple linear model predict new data accurately? We tested this idea using prediction intervals by looking at a potential sample where no individuals in the sample get their daily intake of fruits and vegetables. 
+
+
+Because we are fitting and predicting a linear model, we must make a few assumptions first. [5] <br/>
 1. The relationship between the predictors and the response is linear. <br/>
 2. The error term has zero mean and constant variance. <br/>
 3. The error term has constant variance. (No signs of homoskedasticity) <br/>

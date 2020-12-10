@@ -10,6 +10,7 @@ library(dplyr)
 library(tidyverse)
 library(car)
 library(MASS)
+library(matlib)
 read.csv("C:\\Users\\jacob\\Desktop\\data_prime.csv") -> df
 ```
 
@@ -79,8 +80,10 @@ plot(lm1.2)
 ```{r}
 dfedit <- df[-c(197,269,700),]
 dfedit2 <- df[-c(162,202,205),]
+dfedit3 <- df[-c(197,269,700,162,202,205)]
 summary(lm(y ~ x1 + x2, data = dfedit))
 summary(lm(y ~ x1 + x2, data = dfedit2))
+summary(lm(y ~ x1 + x2, data = dfedit3))
 ```
 
 ```{r}
@@ -97,4 +100,28 @@ rlm2$coefficients
 
 lm1.2$coefficients
 rlm1.2$coefficients
+```
+
+```{r}
+subset(df, select = c(y,x1,x2)) -> df_s
+df_m <- as.matrix(df_s)
+subset(df_s, select = c(y)) -> yvec
+as.matrix((yvec)) -> ymat
+subset(df_s, select = c(x1, x2)) -> xvec
+cbind(v = 1,xvec) -> xvec
+as.matrix(xvec) -> xmat
+
+t(xmat) -> txmat
+txmat %*% xmat -> ttxmat
+inv(ttxmat) -> invttxmat
+
+txmat %*% ymat -> txymat
+
+invttxmat %*% txymat -> beta
+```
+
+```{r fig.height=5,fig.width=8}
+plot(lm1.2)
+residualPlots(lm1.2, type = "rstudent")
+vif(lm1.2)
 ```

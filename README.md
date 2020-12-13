@@ -132,7 +132,7 @@ Because we are fitting and predicting a linear model, we must make a few assumpt
 We demonstrate that these assumptions are met using residual analysis. This also plays a key role in determine the strength of our model. We have plotted the residuals using the type "R-Student Residuals". Studentized residuals are computed by deleting each observation one at a time, and each time refitting the model on the observations that are left. (n-1) The standardized format of the comparison between the observed and fitted values based on the model with n-1 observations will produce studentized residuals. <br/>
  
 #### Figure 1.3: Residuals vs Fitted Plot 
-![Residuals VS Fitted mlr](https://user-images.githubusercontent.com/74206318/101710271-84dc3a80-3a67-11eb-9a1c-775dae92ee8a.png)
+![Residuals VS Fitted mlr](https://user-images.githubusercontent.com/74206318/102001771-1ea42180-3ccc-11eb-8745-c74d5c6c0bc8.png)
 
 #### Figure 1.4: Normal Q-Q Plot 
 ![Normal Q-Q mlr](https://user-images.githubusercontent.com/74206318/101710277-860d6780-3a67-11eb-8373-d11434163b02.png)
